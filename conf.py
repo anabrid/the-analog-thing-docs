@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'The Analog Thing Documentation'
-copyright = '2021, Anabrid et al'
-author = 'Anabrid et al'
+project = 'THAT docs'
+copyright = '2021, Anabrid'
+author = 'Anabrid'
 
 
 # -- General configuration ---------------------------------------------------
@@ -28,6 +28,7 @@ author = 'Anabrid et al'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    "sphinx.ext.mathjax",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -50,3 +51,55 @@ html_theme = 'sphinx_material'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+html_sidebars = {
+    "**": [
+        "logo-text.html",
+        "globaltoc.html",
+        "localtoc.html",
+        "searchbox.html"]
+}
+
+html_theme_options = {
+
+    # Set the name of the project to appear in the navigation.
+    'nav_title': 'THAT docs',
+
+    # Set you GA account ID to enable tracking
+    'google_analytics_account': 'UA-XXXXX',
+
+    # Specify a base_url used to generate sitemap.xml. If not
+    # specified, then no sitemap will be built.
+    'base_url': 'https://project.github.io/project',
+
+    # Set the color and the accent color
+    'color_primary': 'blue',
+    'color_accent': 'light-blue',
+
+    # Set the repo location to get a badge with stats
+    'repo_url': 'https://github.com/project/project/',
+    'repo_name': 'Project',
+
+    # Visible levels of the global TOC; -1 means unlimited
+    'globaltoc_depth': 2,
+    # If False, expand all TOC entries
+    'globaltoc_collapse': False,
+    # If True, show hidden TOC entries
+    'globaltoc_includehidden': True,
+    
+
+    "nav_links": [
+        #{"href": "index", "internal": True, "title": "Welcome"},
+        #{"href": "basics/index", "internal": True, "title": "Basics"},
+        #{"href": "applications/index", "internal": True, "title": "Applications"},
+        #{"href": "interfaces/index", "internal": True, "title": "Interfaces"},        
+        {'href': 'https://the-analog-thing.org/', 'internal': False, 'title': 'THAT Home'},
+        {'href': 'https://shop.anabrid.com/', 'internal': False, 'title': 'THAT Shop'},
+        {'href': 'https://analogparadigm.com/', 'internal': False, 'title': 'Analog Paradigm'},
+        {'href': 'https://anabrid.com/', 'internal': False, 'title': 'Anabrid'},
+    ],
+}
+
+
+html_use_index = True
+html_domain_indices = True

@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to The Analog Thing Documentation's documentation!
-==========================================================
+Welcome to THAT docs!
+=====================
 
 This is the starting point for a new attempt of a documentation for `The Analog Thing <https://the-analog.thing.org>`_.
 It is planned as a successor for the `current documentation wiki <https://the-analog-thing.org/wiki>`_, which will
@@ -23,18 +23,11 @@ The major advantage of this documentation system is that
 
 Let's start with a navigation hierarchy.
 
-About 
------
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-   kitchen-sink/index
-
-So welcome to this stuff.
-
-
-.. important::
-
-    This sample documentation was generated on |today|, and is rebuilt on every commit.
+   basics/index
+   applications/index
+   interfaces/index
+   advanced/index
