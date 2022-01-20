@@ -63,10 +63,9 @@ html_sidebars = {
 html_theme_options = {
 
     # Set the name of the project to appear in the navigation.
-    'nav_title': 'THAT docs',
+    'nav_title': 'THAT docs', # do not show
 
     # Set you GA account ID to enable tracking
-    'google_analytics_account': 'UA-XXXXX',
 
     # Specify a base_url used to generate sitemap.xml. If not
     # specified, then no sitemap will be built.
@@ -77,13 +76,13 @@ html_theme_options = {
     'color_accent': 'light-blue',
 
     # Set the repo location to get a badge with stats
-    'repo_url': 'https://github.com/project/project/',
-    'repo_name': 'Project',
+    'repo_url': 'https://lab.analogparadigm.com/ulmann/the-analog-thing/-/tree/master/documentation/sphinx',
+    'repo_name': 'Gitlab',
 
     # Visible levels of the global TOC; -1 means unlimited
     'globaltoc_depth': 2,
     # If False, expand all TOC entries
-    'globaltoc_collapse': False,
+    'globaltoc_collapse': True,
     # If True, show hidden TOC entries
     'globaltoc_includehidden': True,
     
