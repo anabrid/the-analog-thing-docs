@@ -63,7 +63,7 @@ html_sidebars = {
 html_theme_options = {
 
     # Set the name of the project to appear in the navigation.
-    'nav_title': 'THAT docs', # do not show
+    'nav_title': 'THAT', # do not show
 
     # Set you GA account ID to enable tracking
 

@@ -1,5 +1,0 @@
-
-Lorenz attractor
-=================
-
-blabla
