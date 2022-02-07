@@ -55,6 +55,8 @@
     <script src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Differential equations" href="basics_differential_equations.html" />
+    <link rel="prev" title="The Analog Thing" href="../index.html" />
   
    
 
@@ -219,6 +221,78 @@
     <li class="md-nav__item">
     
     
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <label class="md-nav__link md-nav__link--active" for="__toc"> Quickstart-guide: Damped oszillation </label>
+    
+      <a href="#" class="md-nav__link md-nav__link--active">Quickstart-guide: Damped oszillation</a>
+      
+        
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">Contents</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#rst-basics-quickstart--page-root" class="md-nav__link">Quickstart-guide: Damped oszillation</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#mathematical-description-of-a-damped-oscillation" class="md-nav__link">1. Mathematical description of a damped oscillation</a>
+        </li>
+        <li class="md-nav__item"><a href="#derivation-of-a-computer-circuit" class="md-nav__link">2. Derivation of a computer circuit</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#basic-computing-parts" class="md-nav__link">Basic computing parts:</a>
+        </li>
+        <li class="md-nav__item"><a href="#deriving-the-actual-circuit" class="md-nav__link">Deriving the actual circuit:</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#wiring-the-circuit-on-a-that-and-adjusting-parameters" class="md-nav__link">3. Wiring the circuit on a THAT and adjusting parameters</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#that-overview" class="md-nav__link">THAT-overview</a>
+        </li>
+        <li class="md-nav__item"><a href="#wiring-that" class="md-nav__link">Wiring THAT</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#operation-and-visualization" class="md-nav__link">4. Operation and visualization</a>
+        </li></ul>
+            </nav>
+        </li>
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="../_sources/rst/basics_quickstart.rst.txt">Show Source</a> </li>
+
+  </ul>
+</nav>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="#mathematical-description-of-a-damped-oscillation" class="md-nav__link">1. Mathematical description of a damped oscillation</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#derivation-of-a-computer-circuit" class="md-nav__link">2. Derivation of a computer circuit</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#wiring-the-circuit-on-a-that-and-adjusting-parameters" class="md-nav__link">3. Wiring the circuit on a THAT and adjusting parameters</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#operation-and-visualization" class="md-nav__link">4. Operation and visualization</a>
+      
+    
+    </li></ul>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
       <a href="basics_differential_equations.html" class="md-nav__link">Differential equations</a>
       
     
@@ -266,14 +340,7 @@
     <li class="md-nav__item">
     
     
-      <a href="applications/hindmarsh-rose_neuron.html" class="md-nav__link">Hindmarsh-Rose neuron model</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="applications/lorenz_attractor.html" class="md-nav__link">Lorenz attractor</a>
+      <a href="applications/roessler_attractor/aplaca_1.html" class="md-nav__link">Rössler-attractor </a>
       
     
     </li>
@@ -357,7 +424,7 @@
             
   
 <h1 id="rst-basics-quickstart--page-root">Quickstart-guide: Damped oszillation<a class="headerlink" href="#rst-basics-quickstart--page-root" title="Permalink to this headline">¶</a></h1>
-<a class="reference internal image-reference" href="images/quickstart/ExecutionOfAnAnalogSimulation.jpg"><img alt="Alternative text" class="align-right" src="images/quickstart/ExecutionOfAnAnalogSimulation.jpg" style="width: 400px;"/></a>
+<a class="reference internal image-reference" href="../_images/ExecutionOfAnAnalogSimulation.jpg"><img alt="Alternative text" class="align-right" src="../_images/ExecutionOfAnAnalogSimulation.jpg" style="width: 400px;"/></a>
 <p>The modeling of a damped oscillation is a good starting point for analog programming beginners. This article shall give a detailed step by step explanation how to implement a simulation on The Analog Thing by describing the system with a differential equation, deriving a computer circuit using the full repatriation method (originally developed by Lord Kelvin around 1875) and to get results on an oscilloscope.</p>
 <p>There are four major steps to execute a simulation on an analog computer, all of which are equally crucial:</p>
 <blockquote>
@@ -407,7 +474,7 @@
 </pre></div>
 </div>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/Damped_oscillator.png"><img alt="Alternative text" class="align-right" src="images/quickstart/Damped_oscillator.png" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/Damped_oscillator.png"><img alt="Alternative text" class="align-right" src="../_images/Damped_oscillator.png" style="width: 400px;"/></a>
 </td>
 </tr>
 </tbody>
@@ -433,14 +500,14 @@
 <p><strong>Note: a can only accept values between 0 and 1!</strong></p>
 <p>Can also be used as dividing factor so <strong>x/a</strong> is generated.</p>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/potentiometersymbol.png"><img alt="Alternative text" class="align-right" src="images/quickstart/potentiometersymbol.png" style="width: 200px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/potentiometersymbol.png"><img alt="Alternative text" class="align-right" src="../_images/potentiometersymbol.png" style="width: 200px;"/></a>
 </td>
 </tr>
 <tr class="row-odd"><td><p>The <strong>inverter // summer</strong>, the input (or inputs) can be found on the left and the output on the right.</p>
 <p><strong>Note: Due to technical reasons the output of a summer is negated! Input: x,y –&gt; Output: -(x+y)</strong></p>
 <p>At the basis of the output inversion <strong>a summer with one input functions as inverter</strong> and therefore the summer and the inverter share the same circuit symbol.</p>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/inverter.png"><img alt="Alternative text" class="align-right" src="images/quickstart/inverter.png" style="width: 200px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/inverter.png"><img alt="Alternative text" class="align-right" src="../_images/inverter.png" style="width: 200px;"/></a>
 </td>
 </tr>
 <tr class="row-even"><td><p>The <strong>integrator</strong>, the input (or inputs) can be found on the left and the output on the right.</p>
@@ -448,7 +515,7 @@
 <p><strong>Note: Due to technical reasons the output of an integrator is negated! ẍ –&gt;-ẋ</strong></p>
 <p>Electrical analog integrators can only integrate over time.</p>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/integratorsymbol.png"><img alt="Alternative text" class="align-right" src="images/quickstart/integratorsymbol.png" style="width: 200px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/integratorsymbol.png"><img alt="Alternative text" class="align-right" src="../_images/integratorsymbol.png" style="width: 200px;"/></a>
 </td>
 </tr>
 </tbody>
@@ -472,15 +539,15 @@
 <tr class="row-even"><td><p>As mentioned above, start with an integrator and assume the highest derivative as input.</p>
 <p><strong>ẍ</strong> represents the deflection over time. If <strong>ẋ0</strong> is set to 1, the damped oscillation starts with maximum velocity.</p>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/circuit01.png"><img alt="Alternative text" class="align-right" src="images/quickstart/circuit01.png" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/circuit011.png"><img alt="Alternative text" class="align-right" src="../_images/circuit011.png" style="width: 400px;"/></a>
 </td>
 </tr>
 <tr class="row-odd"><td><p>When putting another integrator behind the first, you can generate <strong>-ẋ</strong> and <strong>x</strong></p></td>
-<td><a class="reference internal image-reference" href="images/quickstart/circuit02.png"><img alt="Alternative text" class="align-right" src="images/quickstart/circuit02.png" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/circuit021.png"><img alt="Alternative text" class="align-right" src="../_images/circuit021.png" style="width: 400px;"/></a>
 </td>
 </tr>
 <tr class="row-even"><td><p>To generate <strong>ẋ</strong> from <strong>-ẋ</strong>, branch off the circuit behind the first integrator and put the second wire in an inverter.</p></td>
-<td><a class="reference internal image-reference" href="images/quickstart/circuit03.png"><img alt="Alternative text" class="align-right" src="images/quickstart/circuit03.png" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/circuit03.png"><img alt="Alternative text" class="align-right" src="../_images/circuit03.png" style="width: 400px;"/></a>
 </td>
 </tr>
 <tr class="row-odd"><td><p>Insert two coefficient potentiometers to give ẋ and x their coefficients.</p>
@@ -488,33 +555,33 @@
 <p>d = damper coefficient</p>
 <p>To generate <strong>d*ẋ</strong> and <strong>k*x</strong></p>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/circuit04.png"><img alt="Alternative text" class="align-right" src="images/quickstart/circuit04.png" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/circuit04.png"><img alt="Alternative text" class="align-right" src="../_images/circuit04.png" style="width: 400px;"/></a>
 </td>
 </tr>
 <tr class="row-even"><td><p>Merge the outputs of the coefficient potentiometers in a summer.</p>
 <p>Note the sign change, which is rather useful for this case.</p>
 <p>Output: <strong>-(d*ẋ + k*x)</strong></p>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/circuit05.png"><img alt="Alternative text" class="align-right" src="images/quickstart/circuit05.png" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/circuit05.png"><img alt="Alternative text" class="align-right" src="../_images/circuit05.png" style="width: 400px;"/></a>
 </td>
 </tr>
 <tr class="row-odd"><td><p>As last computing part add another coefficient potentiometer to divide the output of the summer with the mass coefficient.</p>
 <p>Output: <strong>-(d*ẋ + k*x) / m</strong></p>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/circuit06.png"><img alt="Alternative text" class="align-right" src="images/quickstart/circuit06.png" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/circuit06.png"><img alt="Alternative text" class="align-right" src="../_images/circuit06.png" style="width: 400px;"/></a>
 </td>
 </tr>
 <tr class="row-even"><td><p>Next to final step is to close the computing circuit by connecting the output of the last potentiometer with the input of the first integrator.</p>
 <p>The sign is already correct.</p>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/circuit07.png"><img alt="Alternative text" class="align-right" src="images/quickstart/circuit07.png" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/circuit07.png"><img alt="Alternative text" class="align-right" src="../_images/circuit07.png" style="width: 400px;"/></a>
 </td>
 </tr>
 <tr class="row-odd"><td><p>Lastly, branch off the circuit at a given point to use it later on with a given interface.</p>
 <p>In this case the circuit is branched just after the inverter to make the signal (in this case the velocity over time) visible on an oscilloscope later on.</p>
 <p>Usually, outputs are drawn as arrows.</p>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/circuit08.png"><img alt="Alternative text" class="align-right" src="images/quickstart/circuit08.png" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/circuit08.png"><img alt="Alternative text" class="align-right" src="../_images/circuit08.png" style="width: 400px;"/></a>
 </td>
 </tr>
 </tbody>
@@ -548,13 +615,13 @@
 <p><strong>IC-panel:</strong> IC refers to initial condition and is used to set the starting condition of the integrator.</p>
 <p>If the IC panel is left open, the initial condition is set to zero.</p>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/THATv1.0_overview.jpg"><img alt="Alternative text" class="align-right" src="images/quickstart/THATv1.0_overview.jpg" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/THATv1.0_overview.jpg"><img alt="Alternative text" class="align-right" src="../_images/THATv1.0_overview.jpg" style="width: 400px;"/></a>
 </td>
 </tr>
 <tr class="row-odd"><td><p>In this image the for this task important computing elements, panels and switches are highlighted.</p>
 <p>Note that you certainly do not need every marked computing element, just some of each type.</p>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/THATv1.0_parts01.jpg"><img alt="Alternative text" class="align-right" src="images/quickstart/THATv1.0_parts01.jpg" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/THATv1.0_parts01.jpg"><img alt="Alternative text" class="align-right" src="../_images/THATv1.0_parts01.jpg" style="width: 400px;"/></a>
 </td>
 </tr>
 </tbody>
@@ -583,18 +650,18 @@
 <p>Also, connect a blue wire to the first integrators input and a red wire to it´s output, but leave them open.</p>
 <p>The blue wire shall be the last wire to be closed at the end.</p>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/DO_00.png"><img alt="Alternative text" class="align-right" src="images/quickstart/DO_00.png" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/DO_00.png"><img alt="Alternative text" class="align-right" src="../_images/DO_00.png" style="width: 400px;"/></a>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/DO_00.jpg"><img alt="Alternative text" class="align-right" src="images/quickstart/DO_00.jpg" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/DO_00.jpg"><img alt="Alternative text" class="align-right" src="../_images/DO_00.jpg" style="width: 400px;"/></a>
 </td>
 </tr>
 <tr class="row-odd"><td><p><strong>Step 2:</strong></p>
 <p>Connect the output of the first integrator (red wire) to the input of the second integrator.</p>
 <p>Connect a yellow cable to the output of the second integrator.</p>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/DO_01.png"><img alt="Alternative text" class="align-right" src="images/quickstart/DO_01.png" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/DO_01.png"><img alt="Alternative text" class="align-right" src="../_images/DO_01.png" style="width: 400px;"/></a>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/DO_01.jpg"><img alt="Alternative text" class="align-right" src="images/quickstart/DO_01.jpg" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/DO_01.jpg"><img alt="Alternative text" class="align-right" src="../_images/DO_01.jpg" style="width: 400px;"/></a>
 </td>
 </tr>
 <tr class="row-even"><td><p><strong>Step 3:</strong></p>
@@ -602,9 +669,9 @@
 <p>Be careful not to mix up the SJ panel of the inverter with the input panel.</p>
 <p>Connect a black cable to the output of the first inverter.</p>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/DO_02.png"><img alt="Alternative text" class="align-right" src="images/quickstart/DO_02.png" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/DO_02.png"><img alt="Alternative text" class="align-right" src="../_images/DO_02.png" style="width: 400px;"/></a>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/DO_02.jpg"><img alt="Alternative text" class="align-right" src="images/quickstart/DO_02.jpg" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/DO_02.jpg"><img alt="Alternative text" class="align-right" src="../_images/DO_02.jpg" style="width: 400px;"/></a>
 </td>
 </tr>
 <tr class="row-odd"><td><p><strong>Step 4:</strong></p>
@@ -613,18 +680,18 @@
 <p>Connect both outputs of the just cabled potentiometers with green wires.</p>
 <p>Note: For practical reasons potentiometers are usually numbered in the to be executed circuit plan.</p>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/DO_03.png"><img alt="Alternative text" class="align-right" src="images/quickstart/DO_03.png" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/DO_03.png"><img alt="Alternative text" class="align-right" src="../_images/DO_03.png" style="width: 400px;"/></a>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/DO_03.jpg"><img alt="Alternative text" class="align-right" src="images/quickstart/DO_03.jpg" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/DO_03.jpg"><img alt="Alternative text" class="align-right" src="../_images/DO_03.jpg" style="width: 400px;"/></a>
 </td>
 </tr>
 <tr class="row-even"><td><p><strong>Step 5:</strong></p>
 <p>Connect both potentiometer outputs (green wires) each with an input of the summer.</p>
 <p>Connect a red wire to the output of the summer.</p>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/DO_04.png"><img alt="Alternative text" class="align-right" src="images/quickstart/DO_04.png" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/DO_04.png"><img alt="Alternative text" class="align-right" src="../_images/DO_04.png" style="width: 400px;"/></a>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/DO_04.jpg"><img alt="Alternative text" class="align-right" src="images/quickstart/DO_04.jpg" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/DO_04.jpg"><img alt="Alternative text" class="align-right" src="../_images/DO_04.jpg" style="width: 400px;"/></a>
 </td>
 </tr>
 <tr class="row-odd"><td><p><strong>Step 6:</strong></p>
@@ -632,17 +699,17 @@
 <p>Connect the input of the first integrator (blue wire) with the output of the third potentiometer.</p>
 <p>The circuit is closed.</p>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/DO_05.png"><img alt="Alternative text" class="align-right" src="images/quickstart/DO_05.png" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/DO_05.png"><img alt="Alternative text" class="align-right" src="../_images/DO_05.png" style="width: 400px;"/></a>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/DO_05.jpg"><img alt="Alternative text" class="align-right" src="images/quickstart/DO_05.jpg" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/DO_05.jpg"><img alt="Alternative text" class="align-right" src="../_images/DO_05.jpg" style="width: 400px;"/></a>
 </td>
 </tr>
 <tr class="row-even"><td><p><strong>Step 7:</strong></p>
 <p>Connect the output of the inverter with an output panel (x, y, z or u) by plugging a yellow wire on top of the black wire connected with said output.</p>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/DO_06.png"><img alt="Alternative text" class="align-right" src="images/quickstart/DO_06.png" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/DO_06.png"><img alt="Alternative text" class="align-right" src="../_images/DO_06.png" style="width: 400px;"/></a>
 </td>
-<td><a class="reference internal image-reference" href="images/quickstart/DO_06.jpg"><img alt="Alternative text" class="align-right" src="images/quickstart/DO_06.jpg" style="width: 400px;"/></a>
+<td><a class="reference internal image-reference" href="../_images/DO_06.jpg"><img alt="Alternative text" class="align-right" src="../_images/DO_06.jpg" style="width: 400px;"/></a>
 </td>
 </tr>
 </tbody>
@@ -665,6 +732,30 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
           
+            <a href="../index.html" title="The Analog Thing"
+               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+               rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span
+                      class="md-footer-nav__direction"> Previous </span> <strong>The Analog Thing</strong> </span>
+              </div>
+            </a>
+          
+          
+            <a href="basics_differential_equations.html" title="Differential equations"
+               class="md-flex md-footer-nav__link md-footer-nav__link--next"
+               rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
+                class="md-flex__ellipsis"> <span
+                class="md-footer-nav__direction"> Next </span> Differential equations </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink"><i
+                class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
           
         </a>
         

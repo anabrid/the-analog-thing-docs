@@ -16,6 +16,7 @@ Welcome to the THAT website, a homepage generated and maintained by anabrid GmbH
 This Wiki contains educational articles for basic understanding of electronic analog computers and documentation about **The Analog Thing** (or THAT for short), an affordable Open Source Analog Computer with a focus on education, hobbyists, programmers, scientists and everybody interested in non-traditional computing architectures. The THAT can be purchased from anabrid or assembled/ recreated by anybody with basic experience in electronics and soldering.
 
 .. raw:: latex
+
     \newpage
    
 **Basics**
@@ -25,6 +26,7 @@ This Wiki contains educational articles for basic understanding of electronic an
    :maxdepth: 2
    :caption: Basics:
    
+   rst/basics_quickstart
    rst/basics_differential_equations
    rst/basics_machine_unit
    rst/basics_computing_elements
