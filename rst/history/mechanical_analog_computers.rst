@@ -1,2 +1,0 @@
-Mechanical analog computers
-===========================

@@ -1,2 +1,0 @@
-Early electronic analog computers:
-==================================
