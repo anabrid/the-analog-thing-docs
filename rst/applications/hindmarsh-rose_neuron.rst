@@ -1,0 +1,2 @@
+Hindmarsh-Rose neuron model
+===========================

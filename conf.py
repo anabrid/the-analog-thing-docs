@@ -102,3 +102,8 @@ html_theme_options = {
 
 html_use_index = True
 html_domain_indices = True
+
+# Grouping the document tree into LaTeX files. List of tuples# (source start file, target name, title, author, documentclass [howto/manual]).
+latex_documents = [
+ ('index', 'yourdoc.tex', u'THAT docu', u'anabrid', 'manual'),
+]
