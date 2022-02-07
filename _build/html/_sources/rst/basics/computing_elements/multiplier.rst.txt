@@ -1,5 +1,0 @@
-Multiplier
-==========
-
-Devision and root
-~~~~~~~~~~~~~~~~~
