@@ -10,3 +10,5 @@
    applications/elegant_chaos/alpaca_15
    applications/double_pendulum/alpaca_21
    applications/hindmash_rose_neuron/spiking_neuron
+   applications/sqm_model/alpaca_31
+   applications/euler_spiral/alpaca_33

@@ -118,9 +118,11 @@ the green trace corresponds to the amount of potassium channels
 
 
 
-9 J. L. Hindmarsh, R. M. Rose, “A model of the nerve impulse using two
+[Hindmarsh et al. 1982] J. L. Hindmarsh, R. M. Rose, “A model of the nerve impulse using two
 first-order differential eequations”, in *Nature*, Vol. 296, 11th March
-1982, pp. 162–164 J. L. Hindmarsh, R. M. Rose, “A model of neuronal
+1982, pp. 162–164
+
+[Hindmarsh et al. 1984] J. L. Hindmarsh, R. M. Rose, “A model of neuronal
 bursting using three coupled first order differential equations”, in
 *Prov. R. Soc. Lond.*, B 221, 87–102 (1984)
 
