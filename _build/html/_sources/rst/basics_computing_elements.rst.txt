@@ -3,6 +3,7 @@ Computing elements
 ==================
 
 .. toctree::
+ 
    computing_elements/potentiometer
    computing_elements/operationamp
    computing_elements/summer

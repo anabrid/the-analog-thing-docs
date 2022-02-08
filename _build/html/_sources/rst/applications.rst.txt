@@ -8,3 +8,4 @@
    applications/nonlinear_chaos/alpaca_8
    applications/mathieu/alpaca_10
    applications/elegant_chaos/alpaca_15
+   applications/double_pendulum/alpaca_21

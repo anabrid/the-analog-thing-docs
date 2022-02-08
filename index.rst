@@ -25,6 +25,7 @@ This Wiki contains educational articles for basic understanding of electronic an
 .. toctree::
    :maxdepth: 2
    :caption: Basics:
+   :titlesonly:
    
    rst/basics_quickstart
    rst/basics_differential_equations
@@ -41,6 +42,7 @@ This Wiki contains educational articles for basic understanding of electronic an
 .. toctree::
    :maxdepth: 2
    :caption: Applications:
+   :titlesonly:
    
    rst/applications
    
