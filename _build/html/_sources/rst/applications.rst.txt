@@ -9,3 +9,4 @@
    applications/mathieu/alpaca_10
    applications/elegant_chaos/alpaca_15
    applications/double_pendulum/alpaca_21
+   applications/hindmash_rose_neuron/spiking_neuron
