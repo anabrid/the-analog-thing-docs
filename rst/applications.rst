@@ -5,3 +5,4 @@
    applications/bouncing_ball/alpaca_5
    applications/zombies/alpaca_6
    applications/nonlinear_chaos/alpaca_8
+   applications/mathieu/alpaca_10
