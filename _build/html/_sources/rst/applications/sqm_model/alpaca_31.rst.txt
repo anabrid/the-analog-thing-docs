@@ -5,9 +5,9 @@
 .. contents::
    :depth: 3
 
-=================
-Sprott SQ M model
-=================
+================
+Sprott SQM model
+================
 
 
 This application note implements the :math:`SQ_M` model (cf.
