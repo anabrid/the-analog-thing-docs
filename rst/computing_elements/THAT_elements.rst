@@ -2,7 +2,15 @@
 THAT elements
 =============
 
+.. image:: ../images/frontpage/THAT_021.jpg
+  :width: 800
+  :alt: Alternative text
+  :align: right
+
+
 .. toctree::
+   :titlesonly:
+   :numbered:
 
    THAT_elements/potentiometer
    THAT_elements/operationamp

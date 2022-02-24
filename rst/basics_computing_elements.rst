@@ -9,7 +9,8 @@ Computing elements
 
 
 .. toctree::
- 
+   :titlesonly:
+    
    computing_elements/THAT_elements
    computing_elements/advanced_elements
    

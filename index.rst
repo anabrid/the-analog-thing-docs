@@ -44,12 +44,10 @@ You are invited to join the quest to bring analog computing back. THE ANALOG THI
   :alt: Alternative text
   :align: right
    
-**Basics**
-==========
 
 .. toctree::
    :maxdepth: 2
-   :caption: Basics:
+   :caption: Electrical analog computer basics:
    :titlesonly:
    
    rst/basics_differential_equations
@@ -61,8 +59,6 @@ You are invited to join the quest to bring analog computing back. THE ANALOG THI
    rst/basics_quickstart
    
    
-**Applications**
-================
 
 .. toctree::
    :maxdepth: 2
@@ -72,8 +68,6 @@ You are invited to join the quest to bring analog computing back. THE ANALOG THI
    rst/applications
    
 
-**History**
-================
 
 .. toctree::
    :maxdepth: 2
