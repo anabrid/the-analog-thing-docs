@@ -223,20 +223,6 @@
     <li class="md-nav__item">
     
     
-      <a href="../../basics_differential_equations.html" class="md-nav__link">Differential equations</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="../../basics_machine_unit.html" class="md-nav__link">Machine Unit</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
       <a href="../../basics_computing_elements.html" class="md-nav__link">Computing elements</a>
       <ul class="md-nav__list"> 
     <li class="md-nav__item">
@@ -250,6 +236,13 @@
     
     
       <a href="../advanced_elements.html" class="md-nav__link">Advanced elements</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../basics_machine_unit.html" class="md-nav__link">Machine Unit</a>
       
     
     </li></ul>
@@ -273,6 +266,13 @@
     
     
       <a href="../../basics_visualization.html" class="md-nav__link">Visualization of computing results</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../../basics_differential_equations.html" class="md-nav__link">Differential equations</a>
       
     
     </li>
@@ -420,10 +420,33 @@
             
   
 <h1 id="rst-computing-elements-that-elements-summer--page-root"><span class="section-number">3. </span>Summer<a class="headerlink" href="#rst-computing-elements-that-elements-summer--page-root" title="Permalink to this headline">¶</a></h1>
-<p><strong>INSERT IMAGES</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../../../_images/summer_circuit.png"><img alt="Alternative text" class="align-center" src="../../../_images/summer_circuit.png" style="width: 250px;"/></a>
+</td>
+<td><a class="reference internal image-reference" href="../../../_images/summer_symbol.png"><img alt="Alternative text" class="align-center" src="../../../_images/summer_symbol.png" style="width: 350px;"/></a>
+</td>
+</tr>
+<tr class="row-even"><td><p>Electrical circuit</p></td>
+<td><p>Summer circuit symbol</p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../../../_images/summer_that.png"><img alt="Alternative text" class="align-right" src="../../../_images/summer_that.png" style="width: 350px;"/></a>
 <p>The <strong>summer</strong> is the simplest active computing part. As the name suggests, it gives out the sum of given inputs.</p>
-<p><strong>Note: Due to technical reasons the output of a summer is inverted, so the equation: “output = - sum(inputs)” is fulfilled.</strong></p>
-<p>On the basis of the output inversion a summer with one input functions as inverter and therefore summer and inverter share the same circuit symbol.</p>
+<p><strong>Note: The output of a summer is inverted, so the equation:</strong></p>
+<p><strong>U_out = - (U1 + U2 + … + Un)</strong></p>
+<p><strong>is fulfilled.</strong></p>
+<p>On the basis of the output inversion <strong>a summer with one input functions as inverter</strong> and therefore the <strong>summer and the inverter share the same circuit symbol.</strong></p>
+<p>The output inversion is the result of the function principle: The output of the operation amplifier is always trying to compensate all currents at it’s negative input caused by the input voltages.</p>
+<p>The ratio between the input resistors <strong>Ri</strong> and the feedback resistor <strong>Rf</strong> determines the summing factor. If the overall input resistance equals the feedback resistor, the sum factor is one.
+When changing <strong>Ri</strong> to a tenth of <strong>Rf</strong> so <strong>Ri = Rf/10</strong> is fullfilled, an input factor of 10 is achieved.</p>
+<p>The <strong>SJ</strong> connection gives the opportunity to extent the number of inputs by simply connecting this point with a resitor array <strong>XIR</strong>.</p>
+<p>By connecting the <strong>FB</strong> panel with the ground panel directly below, the summer is converted into an open amplifier in order to create inverse functions.</p>
 
 
 

@@ -7,11 +7,11 @@ Coefficient potentiometer
    :header-rows: 0
 
    * - .. image:: ../../images/computing_elements/potentiometercircuit.png
-     	      :width: 150
+     	      :width: 250
   	      :alt: Alternative text
   	      :align: center
      - .. image:: ../../images/computing_elements/potentiometersymbol.png
-     	      :width: 200
+     	      :width: 350
   	      :alt: Alternative text
   	      :align: center  	      
    * - Electrical circuit
