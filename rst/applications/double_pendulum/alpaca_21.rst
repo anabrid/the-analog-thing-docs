@@ -1,6 +1,8 @@
 .. role:: raw-latex(raw)
    :format: latex
 
+**Warning: This simulation requires ten integrators, 15 summers, 16 multipliers, and 17 coefficient potentiometers (-> eight THATs).***
+
 .. contents::
    :depth: 3
 
