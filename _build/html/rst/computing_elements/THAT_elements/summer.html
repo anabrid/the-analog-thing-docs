@@ -53,6 +53,7 @@
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
     <script src="../../../_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="4. Integrator" href="integrator.html" />
@@ -422,25 +423,38 @@
 <h1 id="rst-computing-elements-that-elements-summer--page-root"><span class="section-number">3. </span>Summer<a class="headerlink" href="#rst-computing-elements-that-elements-summer--page-root" title="Permalink to this headline">¶</a></h1>
 <table>
 <colgroup>
-<col style="width: 50%"/>
-<col style="width: 50%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><a class="reference internal image-reference" href="../../../_images/summer_circuit.png"><img alt="Alternative text" class="align-center" src="../../../_images/summer_circuit.png" style="width: 250px;"/></a>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../../../_images/summer_that.png"><img alt="THAT summer unit" class="align-center" src="../../../_images/summer_that.png" style="width: 150px;"/></a>
 </td>
-<td><a class="reference internal image-reference" href="../../../_images/summer_symbol.png"><img alt="Alternative text" class="align-center" src="../../../_images/summer_symbol.png" style="width: 350px;"/></a>
+<td><a class="reference internal image-reference" href="../../../_images/summer_symbol.png"><img alt="Summer circuit symbol" class="align-center" src="../../../_images/summer_symbol.png" style="width: 550px;"/></a>
+</td>
+<td><a class="reference internal image-reference" href="../../../_images/summer_circuit.png"><img alt="Summer electrical circuit" class="align-center" src="../../../_images/summer_circuit.png" style="width: 250px;"/></a>
 </td>
 </tr>
-<tr class="row-even"><td><p>Electrical circuit</p></td>
+<tr class="row-even"><td><p>THAT summer unit</p></td>
 <td><p>Summer circuit symbol</p></td>
+<td><p>Summer electrical circuit</p></td>
 </tr>
 </tbody>
 </table>
-<a class="reference internal image-reference" href="../../../_images/summer_that.png"><img alt="Alternative text" class="align-right" src="../../../_images/summer_that.png" style="width: 350px;"/></a>
 <p>The <strong>summer</strong> is the simplest active computing part. As the name suggests, it gives out the sum of given inputs.</p>
-<p><strong>Note: The output of a summer is inverted, so the equation:</strong></p>
-<p><strong>U_out = - (U1 + U2 + … + Un)</strong></p>
-<p><strong>is fulfilled.</strong></p>
+<p>It fullfills the equation</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+  \ U_{out}&amp;=-\sum_{i=1}^{n} \frac{R_f}{R_i}U_i
+ \end{aligned}\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \ R_f&amp;=\text{Feedback resistor}\\
+  \ R_i&amp;=\text{Input resistor}\\
+  \ U_i&amp;=\text{Input voltage}\\
+ \end{aligned}\end{split}\]</div>
+<p><strong>Note the sign change at the summer output!</strong></p>
 <p>On the basis of the output inversion <strong>a summer with one input functions as inverter</strong> and therefore the <strong>summer and the inverter share the same circuit symbol.</strong></p>
 <p>The output inversion is the result of the function principle: The output of the operation amplifier is always trying to compensate all currents at it’s negative input caused by the input voltages.</p>
 <p>The ratio between the input resistors <strong>Ri</strong> and the feedback resistor <strong>Rf</strong> determines the summing factor. If the overall input resistance equals the feedback resistor, the sum factor is one.

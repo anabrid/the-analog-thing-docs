@@ -27,7 +27,7 @@ with the initial conditions
 .. math::
 
    \begin{aligned}
-      y_0&=1\text{~and}\\
+      y_0&=1\text{ and}\\
       \dot{y}_0&=0.
      \end{aligned}
 

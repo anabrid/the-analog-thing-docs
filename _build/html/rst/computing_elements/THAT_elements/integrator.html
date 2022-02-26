@@ -53,6 +53,7 @@
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
     <script src="../../../_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="5. Open amplifier" href="open_amplifier.html" />
@@ -409,9 +410,7 @@
               <ul class="md-nav__list">
         <li class="md-nav__item"><a href="#basics" class="md-nav__link">4.1. Basics</a>
         </li>
-        <li class="md-nav__item"><a href="#priciple-electronic-circuit" class="md-nav__link">4.2. Priciple electronic circuit</a>
-        </li>
-        <li class="md-nav__item"><a href="#practical-electronic-circuit" class="md-nav__link">4.3. Practical electronic circuit</a>
+        <li class="md-nav__item"><a href="#electronic-circuit" class="md-nav__link">4.2. Electronic circuit</a>
         </li></ul>
             </nav>
         </li>
@@ -433,33 +432,68 @@
 <h1 id="rst-computing-elements-that-elements-integrator--page-root"><span class="section-number">4. </span>Integrator<a class="headerlink" href="#rst-computing-elements-that-elements-integrator--page-root" title="Permalink to this headline">¶</a></h1>
 <table>
 <colgroup>
-<col style="width: 33%"/>
-<col style="width: 33%"/>
-<col style="width: 33%"/>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><a class="reference internal image-reference" href="../../../_images/integrator_principle_circuit.png"><img alt="Alternative text" class="align-center" src="../../../_images/integrator_principle_circuit.png" style="width: 350px;"/></a>
-</td>
-<td><a class="reference internal image-reference" href="../../../_images/integrator_practical_circuit.png"><img alt="Alternative text" class="align-center" src="../../../_images/integrator_practical_circuit.png" style="width: 350px;"/></a>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../../../_images/THAT_Integrator.png"><img alt="Alternative text" class="align-center" src="../../../_images/THAT_Integrator.png" style="width: 150px;"/></a>
 </td>
 <td><a class="reference internal image-reference" href="../../../_images/integrator_symbol.png"><img alt="Alternative text" class="align-center" src="../../../_images/integrator_symbol.png" style="width: 350px;"/></a>
 </td>
 </tr>
-<tr class="row-even"><td><p>Principle circuit of an integrator</p></td>
-<td><p>Practical circuit of an integrator</p></td>
+<tr class="row-even"><td><p>THAT integrator unit</p></td>
 <td><p>Integrator symbol</p></td>
 </tr>
 </tbody>
 </table>
 
 <h2 id="basics"><span class="section-number">4.1. </span>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">¶</a></h2>
-<p>Next to the summer, the <strong>integrator</strong> is the most important computing element, which (like the summer) only has one operation amplifier as active part.</p>
+<p>Next to the summer, the <strong>integrator</strong> is the most important computing element, which is to be found on most if not all electrical analog computers.</p>
+<p>It fullfills the equation</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+  \ U_{out}&amp;=-\int_{0}^{t}\sum_{i=1}^{n} \frac{1}{R_iC}U_i(t)dt+U(0)
+ \end{aligned}\]</div>
+<p>where:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \ C&amp;=\text{Feedback capacitor}\\
+  \ R_i&amp;=\text{Input resistor}\\
+  \ U_i&amp;=\text{Input voltage}\\
+ \end{aligned}\end{split}\]</div>
+<p><strong>Note the sign change at the integrator output!</strong></p>
 
 
-<h2 id="priciple-electronic-circuit"><span class="section-number">4.2. </span>Priciple electronic circuit<a class="headerlink" href="#priciple-electronic-circuit" title="Permalink to this headline">¶</a></h2>
-
-
-<h2 id="practical-electronic-circuit"><span class="section-number">4.3. </span>Practical electronic circuit<a class="headerlink" href="#practical-electronic-circuit" title="Permalink to this headline">¶</a></h2>
+<h2 id="electronic-circuit"><span class="section-number">4.2. </span>Electronic circuit<a class="headerlink" href="#electronic-circuit" title="Permalink to this headline">¶</a></h2>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../../../_images/integrator_principle_circuit.png"><img alt="Alternative text" class="align-center" src="../../../_images/integrator_principle_circuit.png" style="width: 350px;"/></a>
+</td>
+</tr>
+<tr class="row-even"><td><p>Principle circuit of an integrator</p></td>
+</tr>
+</tbody>
+</table>
+<p>There is only one difference between the summer and principle inverter circuit: The feedback resistor <span class="math notranslate nohighlight">\(R_f\)</span> of the summer is replaced by a capacitor C.</p>
+<p>Just as in the summer ciruit, the operation amplifier always tries to compensate any current occuring at it’s negative input caused by the input voltages.</p>
+<p>In opposition to the summer, the integrator circuit cannot really compensate the input current because the feedback capacitor blocks direct current. Instead it increases it’s output voltage as long as the sum of the input voltages is greater zero (and decreases the output for negative inputs).
+Therefore, this circuit <strong>performs a mathematical integration of given inputs over time.</strong></p>
+<p>The integrator is the only computing element which includes time as free variable in it’s computing result, which is why <strong>the integrator dictates the time course of any calculation performed on electrical analog computers.</strong></p>
+<table>
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../../../_images/integrator_practical_circuit.png"><img alt="Alternative text" class="align-center" src="../../../_images/integrator_practical_circuit.png" style="width: 350px;"/></a>
+</td>
+</tr>
+<tr class="row-even"><td><p>Practical circuit of an integrator</p></td>
+</tr>
+</tbody>
+</table>
 
 
 

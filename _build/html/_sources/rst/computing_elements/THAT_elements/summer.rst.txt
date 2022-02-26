@@ -1,34 +1,53 @@
 Summer
 ======
 
+
+
+
 .. list-table::
-   :widths: 75 75
+   :widths: 75 75 75
    :header-rows: 0
 
-   * - .. image:: ../../images/computing_elements/summer_circuit.png
-     	      :width: 250
-  	      :alt: Alternative text
+   * - .. image:: ../../images/computing_elements/summer_that.png
+     	      :width: 150
+  	      :alt: THAT summer unit
   	      :align: center
      - .. image:: ../../images/computing_elements/summer_symbol.png
-     	      :width: 350
-  	      :alt: Alternative text
-  	      :align: center       	      
-   * - Electrical circuit
+     	      :width: 550
+  	      :alt: Summer circuit symbol
+  	      :align: center
+     - .. image:: ../../images/computing_elements/summer_circuit.png
+     	      :width: 250
+  	      :alt: Summer electrical circuit
+  	      :align: center
+            	      
+   * - THAT summer unit
      - Summer circuit symbol
+     - Summer electrical circuit
      
-     
-.. image:: ../../images/computing_elements/summer_that.png
-     	      :width: 350
-  	      :alt: Alternative text
-  	      :align: right
+
      
 The **summer** is the simplest active computing part. As the name suggests, it gives out the sum of given inputs.
 
-**Note: The output of a summer is inverted, so the equation:**
+It fullfills the equation
 
-**U_out = - (U1 + U2 + ... + Un)**
+.. math::
 
-**is fulfilled.**
+   \begin{aligned}
+     \ U_{out}&=-\sum_{i=1}^{n} \frac{R_f}{R_i}U_i
+    \end{aligned}
+    
+where
+
+.. math::
+
+   \begin{aligned}
+     \ R_f&=\text{Feedback resistor}\\
+     \ R_i&=\text{Input resistor}\\
+     \ U_i&=\text{Input voltage}\\
+    \end{aligned}   
+    
+**Note the sign change at the summer output!**
 
 On the basis of the output inversion **a summer with one input functions as inverter** and therefore the **summer and the inverter share the same circuit symbol.**
 
