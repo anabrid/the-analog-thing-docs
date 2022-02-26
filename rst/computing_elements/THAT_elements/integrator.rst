@@ -59,7 +59,7 @@ Electronic circuit
     
    * - Principle circuit of an integrator
 
-There is only one difference between the summer and principle inverter circuit: The feedback resistor :math:`R_f` of the summer is replaced by a capacitor C.
+There is only one difference between the summer and principle integrator circuit: The feedback resistor :math:`R_f` of the summer is replaced by a capacitor C.
 
 Just as in the summer ciruit, the operation amplifier always tries to compensate any current occuring at it's negative input caused by the input voltages.
 
