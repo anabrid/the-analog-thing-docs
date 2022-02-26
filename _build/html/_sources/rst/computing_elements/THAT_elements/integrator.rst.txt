@@ -28,7 +28,7 @@ It fullfills the equation
 .. math::
 
    \begin{aligned}
-     \ U_{out}&=-\int_{0}^{t}\sum_{i=1}^{n} \frac{1}{R_iC}U_i(t)dt+U(0)
+     \ U_{out}&=-\int_{0}^{T}\sum_{i=1}^{n} \frac{1}{R_iC}U_i(t)dt+U(0)
     \end{aligned}
     
 where:
