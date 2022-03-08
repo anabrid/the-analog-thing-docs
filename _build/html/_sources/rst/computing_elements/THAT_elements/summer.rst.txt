@@ -1,9 +1,6 @@
 Summer
 ======
 
-
-
-
 .. list-table::
    :widths: 75 75 75
    :header-rows: 0
@@ -58,4 +55,23 @@ When changing **Ri** to a tenth of **Rf** so **Ri = Rf/10** is fullfilled, an in
 
 The **SJ** connection gives the opportunity to extent the number of inputs by simply connecting this point with a resitor array **XIR**.
 
-By connecting the **FB** panel with the ground panel directly below, the summer is converted into an open amplifier in order to create inverse functions.
+By connecting the **FB** panel with the ground panel directly below, the summer is converted into an open amplifier, e.g. in order to create inverse functions.
+
+Inverter
+--------
+
+.. list-table::
+   :widths: 75 
+   :header-rows: 0
+
+   * - .. image:: ../../images/computing_elements/inverter.png
+     	      :width: 150
+  	      :alt: THAT summer unit
+  	      :align: center
+        	      
+   * - THAT inverter unit
+
+
+The inverter circuit equals the summer circuit execpt for the number of inputs. The inverters found on the THAT have a single in- and output, but hold the possibility to extent the number of inputs by connection the SJ-panel of the inverter to a SJ-panel of a XIR-element. 
+
+By simple adding this input network the inverter is converted into a summer, in case you need more summers then already present.

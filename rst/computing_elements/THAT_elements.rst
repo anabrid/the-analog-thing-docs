@@ -19,5 +19,6 @@ THAT elements
    THAT_elements/open_amplifier
    THAT_elements/multiplier
    THAT_elements/comperators
-   THAT_elements/patch_field
-   THAT_elements/output_devices
+   THAT_elements/outputs
+   THAT_elements/passive_elements
+
