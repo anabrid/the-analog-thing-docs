@@ -1,5 +1,5 @@
 ====================================
-Quickstart-guide: Damped oszillation
+Quickstart-guide: Damped oscillation
 ====================================
 
 .. image:: images/quickstart/ExecutionOfAnAnalogSimulation.jpg
