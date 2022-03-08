@@ -10,7 +10,7 @@ The **machine unit** is a technical variable and **represents the maximum voltag
 
 The machine unit is system specific, the **THAT has a machine unit of +/- 10 volts.**
 
-The CHINCH-outputs (x, y , z, u) have a 10 to 1 voltage devider so the results given by those outputs can only give values between -1 and +1.
+The CHINCH-outputs (x, y , z, u) have a 10 to 1 voltage divider so the results given by those outputs can only give values between -1 and +1.
 
 .. raw:: latex
 
