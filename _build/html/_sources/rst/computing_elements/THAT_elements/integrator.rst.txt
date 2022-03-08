@@ -111,7 +111,7 @@ By switching **r** to 1, the resistors Rf and R'f are pinned to ground so **U(0)
 
 By switching **h** to 1, the input resistors and therefore the input voltages are connected to the integrator.
 
-Overall, this configuration equals the principle inverter circuit.
+Overall, this configuration equals the principle integrator circuit.
 
 HALT
 ~~~~
