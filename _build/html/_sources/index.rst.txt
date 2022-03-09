@@ -6,6 +6,8 @@
 **The Analog Thing**
 ====================
 
+**Note: Work in progress! Missing articles will be filled within the next weeks.**
+
 Welcome to the THAT website, a homepage generated and maintained by anabrid GmbH.
 
 .. image:: rst/images/frontpage/THAT_01.png
