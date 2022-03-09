@@ -100,7 +100,7 @@ Initial contition
 
 Before running the program/simulation, the condensator C needs to be charged to the starting value of the to be performed integration. This is acieved by setting both switches **r** and **h** to **0**.
 
-Every electrical analog computer needs to be in **initial contidion mode** before the program ist started. (IC mode on THAT switch)
+Every electrical analog computer needs to be in **initial contidion mode** before the program is started. (IC mode on THAT switch)
 
 Operation
 ~~~~~~~~~
@@ -116,13 +116,13 @@ Overall, this configuration equals the principle integrator circuit.
 HALT
 ~~~~
 
-The **HALT mode** allows a (short) interuption of the simulation at any point in time.
+The **HALT mode** allows a (short) interruption of the simulation at any point in time.
 Therefore **r** is set to 1 and **h** is set to 0.
 
 In this mode the inputs no longer effect the circuit, instead the last value just before switching **h** is hold at the inverter output. 
 
 This is very usefull for diagnostic purposes.
 
-**Note: Due to leak currents and not ideal amplifiers the HALT mode cannot be hold indefinetly. The value will (slowly) change over time.**
+**Note: Due to leak currents and not ideal amplifiers the HALT mode cannot be held indefinetly. The value will (slowly) change over time.**
 
 
