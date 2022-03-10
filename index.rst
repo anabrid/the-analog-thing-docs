@@ -79,8 +79,8 @@ You are invited to join the quest to bring analog computing back. THE ANALOG THI
    :maxdepth: 2
    :caption: History:
    
-   rst/history_first_electronic_analog_computers
    rst/history_mechanical_analog_computers
+   rst/history_first_electronic_analog_computers
    rst/history_system_examples_1950-now
 
 .. Indices and tables
