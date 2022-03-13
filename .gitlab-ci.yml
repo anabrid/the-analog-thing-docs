@@ -1,0 +1,27 @@
+stages:
+- run
+- deploy
+
+sphinx-docs:make:
+  stage: run
+  image: svek/sphinx-full
+  script:
+    - make dirhtml 
+  artifacts:
+    paths:
+      - _build/
+
+# Note that this pushes via SFTP since the-analog-thing.org is currently hosted
+# on a server by sven and not on these awkward FTP Goneo targets
+
+sphinx-docs:deploy:
+  stage: deploy
+  needs: ["sphinx-docs:make"]
+  image: svek/sphinx-full
+  script:
+    - chmod 600 "$SSH_PRIVATE_KEY_FILE_STAGING"
+    - echo "$SSH_SERVER_PUBLIC_KEY" > ~/userknown.txt
+    - cd _build && echo -e "cd $SSH_REMOTE_DIRECTORY\nput -R ." | sftp -o "UserKnownHostsFile=~/userknown.txt" -i"$SSH_PRIVATE_KEY_FILE_STAGING" $DEPLOY_STAGING_SSH_HOST
+  environment:
+    name: target # for humans
+    url: https://the-analog-thing.org/docs
