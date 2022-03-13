@@ -1,0 +1,23 @@
+This howto shall contain a step by step manual for converting LaTeX docu (.tex-files) to Sphinx (.rst-files).
+
+Requires installation of pandoc.
+Check out: https://pandoc.org/installing.html
+
+
+1) execute on bash:
+
+pandoc -s -t rst --toc input.tex -o output.rst
+
+-> generates output.rst
+   -> Know issues:
+	- the figure and math objects commonly used to generate circuit plans cannot be converted by pandoc and therefore must be manually removed von the tex-files. When executing pandoc, the console outputs the line in the .tex file where the error occurs
+	
+2) copy generated .rst file and (!) it's corresponding images to sphinx folder and add it to the toctree.
+
+3) screenshot the circuit plans (e.g. from .pdf file).
+
+4) Try building and go through console errors, usually image pathes are broken.
+
+5) Format acticle to beauty and don't forget to also format the references.
+
+6) git it!
