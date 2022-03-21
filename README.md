@@ -30,7 +30,7 @@ We can also build upon Github for user managament.
 
 Once you [got Sphinx installed](https://www.sphinx-doc.org/en/master/usage/installation.html),
 editing is as simple as typing `make html` and opening `_build/html/index.html`
-with the Browser.
+with the browser.
 
 You should also be able to type `make latexpdf` and opening
 `_build/latex/thatdocs.pdf`, but it is known that Latex is more sensitive
