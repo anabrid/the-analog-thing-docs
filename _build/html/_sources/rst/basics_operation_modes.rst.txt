@@ -22,13 +22,13 @@ Turns off the computer, all elements are disconnected from the supply line.
 COEFF
 ~~~~~
 
-After the implementation of a program on an electrical analof computer, the coefficents are to be set up according to the calculation plan. The quality of a simulation is often dependent on very accurate potentiometer settings.
+After the implementation of a program on an electrical analog computer, the coefficents are to be set up according to the calculation plan. The quality of a simulation is often dependent on very accurate potentiometer settings.
 
 Therefore the THAT as many other electrical analog computers comes with the **COEFF** mode.
 
 In this mode the potentiometers are supplied with a full machine unit on it's input. The output of a coefficient is given to the display so it can be fine adjusted.
 
-In order to display a certain coefficient, turn the coefficient switch to the desired potentiometer.
+**In order to display a certain coefficient, turn the coefficient switch to the desired potentiometer.**
 
 IC
 ~~
@@ -73,11 +73,11 @@ The simulation of a (simple) damped oscillation is a good example for the usage 
 MINION
 ~~~~~~
 
-The **MINION** mode was implement in order to connect and syncronize multiple THATs which each other on order to realize programs where their realizations exceed the number of available elements on one THAT.
+The **MINION** mode was implement in order to connect and syncronize multiple THATs which each other on order to implement programs where their realizations exceed the number of available elements on one THAT.
 
 When a THAT is set to MINION mode, it is controlled by another THAT and will be set to the same operation mode as the **MASTER THAT** (except for COEFF mode, this still needs to be done manually for each THAT in the daisy chain).
 
-The MASTER THAT is to be set into the desired operation mode by the user, which is likely not MINION mode.
+The MASTER THAT is to be set into the desired operation mode by the user, which is likely OP or REP/REPF.
 
 
 Other operation modes

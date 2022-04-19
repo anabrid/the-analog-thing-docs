@@ -1,4 +1,4 @@
-Step-wise feedback
+Sustitution method
 ==================
 
 
