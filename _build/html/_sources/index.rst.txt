@@ -40,15 +40,16 @@ You are invited to join the quest to bring analog computing back. THE ANALOG THI
 
     \newpage
     
-    
-==============================
-**The Analog Thing: Overview**
-==============================
 
 .. image:: rst/images/frontpage/THAT_021.jpg
   :width: 750
   :alt: Alternative text
-  :align: right
+  :align: left
+   
+   
+==============================
+**The Analog Thing: Overview**
+==============================
    
 
 .. toctree::
