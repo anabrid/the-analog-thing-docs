@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="lang:clipboard.copy" content="Copy to clipboard">
@@ -52,6 +53,7 @@
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -427,7 +429,7 @@
         <div class="md-content">
           <article class="md-content__inner md-typeset" role="main">
             
-  <div class="contents topic" id="contents">
+  <nav class="contents" id="contents" role="doc-toc">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#high-speed-bouncing-ball" id="id2">High-speed Bouncing Ball</a></p>
@@ -437,11 +439,11 @@
 </ul>
 </li>
 </ul>
-</div>
-
-<h1 id="rst-applications-bouncing-ball-alpaca-5--page-root"><a class="toc-backref" href="#rst-applications-bouncing-ball-alpaca-5--page-root">High-speed Bouncing Ball</a><a class="headerlink" href="#rst-applications-bouncing-ball-alpaca-5--page-root" title="Permalink to this headline">¶</a></h1>
-
-<h2 id="introduction"><a class="toc-backref" href="#id3">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+</nav>
+<section id="high-speed-bouncing-ball">
+<h1 id="rst-applications-bouncing-ball-alpaca-5--page-root"><a class="toc-backref" href="#rst-applications-bouncing-ball-alpaca-5--page-root" role="doc-backlink">High-speed Bouncing Ball</a><a class="headerlink" href="#rst-applications-bouncing-ball-alpaca-5--page-root" title="Permalink to this heading">¶</a></h1>
+<section id="introduction">
+<h2 id="introduction"><a class="toc-backref" href="#id3" role="doc-backlink">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
 <p>This application note describes the simulation of a ball bouncing in a
 box. Using high-speed integration, a flicker-free oscilloscope display
 of the ball’s path can be easily obtained. Figure
@@ -469,17 +471,17 @@ the <span class="math notranslate nohighlight">\(x\)</span>-component increases 
 it reaches the right wall etc.</p>
 <table>
 <colgroup>
-<col style="width: 50%"/>
-<col style="width: 50%"/>
+<col style="width: 50.0%"/>
+<col style="width: 50.0%"/>
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><div class="figure align-left">
+<tr class="row-odd"><td><figure class="align-left">
 <a class="reference internal image-reference" href="../../../_images/fig01.png"><img alt="../../../_images/fig01.png" src="../../../_images/fig01.png" style="width: 400px;"/></a>
-</div>
+</figure>
 </td>
-<td><div class="figure align-right">
+<td><figure class="align-right">
 <a class="reference internal image-reference" href="../../../_images/fig02.jpg"><img alt="../../../_images/fig02.jpg" src="../../../_images/fig02.jpg" style="width: 400px; height: 400px;"/></a>
-</div>
+</figure>
 </td>
 </tr>
 <tr class="row-even"><td><p>Movement of the bouncing ball</p></td>
@@ -489,21 +491,21 @@ it reaches the right wall etc.</p>
 </table>
 <table>
 <colgroup>
-<col style="width: 100%"/>
+<col style="width: 100.0%"/>
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><div class="figure align-default">
+<tr class="row-odd"><td><figure class="align-default">
 <a class="reference internal image-reference" href="../../../_images/fig03.png"><img alt="../../../_images/fig03.png" src="../../../_images/fig03.png" style="width: 800px;"/></a>
-</div>
+</figure>
 </td>
 </tr>
 <tr class="row-even"><td><p>Generating the x-component</p></td>
 </tr>
 </tbody>
 </table>
-
-
-<h2 id="programming-and-results"><a class="toc-backref" href="#id4">Programming and results</a><a class="headerlink" href="#programming-and-results" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="programming-and-results">
+<h2 id="programming-and-results"><a class="toc-backref" href="#id4" role="doc-backlink">Programming and results</a><a class="headerlink" href="#programming-and-results" title="Permalink to this heading">¶</a></h2>
 <p>Figure <a class="reference external" href="#pic_x_circuit">[pic_x_circuit]</a> shows the computer setup to
 derive the <span class="math notranslate nohighlight">\(x\)</span>-component of the ball’s position. At the output of
 the leftmost integrator is the velocity <span class="math notranslate nohighlight">\(v_x\)</span> of the ball which
@@ -559,9 +561,9 @@ small Analog Paradigm Model-1 analog computer. The two circuits
 described above are implemented using differently colored patch cables.
 The black cables correspond to the <span class="math notranslate nohighlight">\(x\)</span>-circuit while the orange
 wires implement the <span class="math notranslate nohighlight">\(y\)</span>-circuit.</p>
-<div class="figure align-default">
+<figure class="align-default">
 <img alt="Setup of the bouncing ball problem on an Analog Paradigm Model-1 analog computer" src="../../../_images/setup.jpg"/>
-</div>
+</figure>
 <p>Setup of the bouncing ball problem on an Analog Paradigm Model-1 analog computer</p>
 <p>With the settings as denoted in the circuit diagrams and the computer
 set to repetitive operation with an OP-time of <span class="math notranslate nohighlight">\(20\)</span> ms and short
@@ -570,12 +572,14 @@ can be easily obtained. Since the oscilloscope used has no
 blanking-input, the return of the beam to the upper left corner is
 faintly visible. If a blanking-input is available it can be connected to
 the TRIG+ or TRIG- output of the CU to avoid this artifact.</p>
-<div class="figure align-default" id="id1">
+<figure class="align-default" id="id1">
 <img alt="Trace of the bouncing ball" src="../../../_images/bouncing_ball.jpg"/>
-<p class="caption"><span class="caption-text">Trace of the bouncing ball</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
-
-
+<figcaption>
+<p><span class="caption-text">Trace of the bouncing ball</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
 
 
           </article>
@@ -624,7 +628,7 @@ the TRIG+ or TRIG- output of the CU to avoid this artifact.</p>
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>

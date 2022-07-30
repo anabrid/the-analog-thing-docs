@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="lang:clipboard.copy" content="Copy to clipboard">
@@ -52,6 +53,7 @@
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -235,14 +237,14 @@
     <li class="md-nav__item">
     
     
-      <a href="../advanced_elements.html" class="md-nav__link">Advanced elements</a>
+      <a href="../basics_machine_unit.html" class="md-nav__link">Machine Unit</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="../basics_machine_unit.html" class="md-nav__link">Machine Unit</a>
+      <a href="../advanced_elements.html" class="md-nav__link">Advanced elements (not to be found on THATs)</a>
       
     
     </li></ul>
@@ -427,21 +429,21 @@
         <div class="md-content">
           <article class="md-content__inner md-typeset" role="main">
             
-  
-<h1 id="rst-computing-elements-that-elements-outputs--page-root"><span class="section-number">8. </span>Outputs<a class="headerlink" href="#rst-computing-elements-that-elements-outputs--page-root" title="Permalink to this headline">¶</a></h1>
+  <section id="outputs">
+<h1 id="rst-computing-elements-that-elements-outputs--page-root"><span class="section-number">8. </span>Outputs<a class="headerlink" href="#rst-computing-elements-that-elements-outputs--page-root" title="Permalink to this heading">¶</a></h1>
 <p>The <strong>THAT</strong> comes with 5 AUX-output connectors, X,Y,Z,U and a trigger-output called TRIG.</p>
 <p>While the TRIG-output is limited in it’s use as trigger-output, the other four outputs can also be used as inputs.</p>
-
-<h2 id="x-y-z-u"><span class="section-number">8.1. </span>X,Y,Z,U<a class="headerlink" href="#x-y-z-u" title="Permalink to this headline">¶</a></h2>
+<section id="x-y-z-u">
+<h2 id="x-y-z-u"><span class="section-number">8.1. </span>X,Y,Z,U<a class="headerlink" href="#x-y-z-u" title="Permalink to this heading">¶</a></h2>
 <p>The <strong>X,Y,Z,U</strong> outputs, to be found on top of the THAT next to the MINION-port, are connected with the output panels to be found in the bottom right corner of the patchfield.</p>
 <p>While the THAT has a machine unit of 10 volts, the four outputs are realized as voltage divider with a factor of 10 to 1 so when using these outputs plus/minus one volt is to be expected.</p>
-
-
-<h2 id="trig"><span class="section-number">8.2. </span>TRIG<a class="headerlink" href="#trig" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="trig">
+<h2 id="trig"><span class="section-number">8.2. </span>TRIG<a class="headerlink" href="#trig" title="Permalink to this heading">¶</a></h2>
 <p>TRIG is used to trigger an oscilloscope and has the ModeOP (operation) signal connected. The signal is 5V TTL logic and the low level indicates operation while the high level indicates halted or initial state. The polarity of the TRIG signal can be changed with additional jumper J14 in case needed (not assembled by default).</p>
 <p>In REP or REPF mode the TRIG signal can be used to trigger the regular repeated operation to show a more or less steady curve (depending on OP TIME) on an oscilloscope.</p>
-
-
+</section>
+</section>
 
 
           </article>
@@ -490,7 +492,7 @@
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>

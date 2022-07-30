@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="lang:clipboard.copy" content="Copy to clipboard">
@@ -52,11 +53,12 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Operation modes of analog computers" href="../basics_operation_modes.html" />
-    <link rel="prev" title="3. Noise generators" href="advanced_elements/noise_generators.html" />
+    <link rel="next" title="Advanced elements (not to be found on THATs)" href="advanced_elements.html" />
+    <link rel="prev" title="9. Passive elements" href="THAT_elements/passive_elements.html" />
   
    
 
@@ -234,13 +236,6 @@
     <li class="md-nav__item">
     
     
-      <a href="advanced_elements.html" class="md-nav__link">Advanced elements</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     <label class="md-nav__link md-nav__link--active" for="__toc"> Machine Unit </label>
     
@@ -254,6 +249,13 @@
 
   </ul>
 </nav>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="advanced_elements.html" class="md-nav__link">Advanced elements (not to be found on THATs)</a>
       
     
     </li></ul>
@@ -429,14 +431,14 @@
         <div class="md-content">
           <article class="md-content__inner md-typeset" role="main">
             
-  
-<h1 id="rst-computing-elements-basics-machine-unit--page-root">Machine Unit<a class="headerlink" href="#rst-computing-elements-basics-machine-unit--page-root" title="Permalink to this headline">¶</a></h1>
+  <section id="machine-unit">
+<h1 id="rst-computing-elements-basics-machine-unit--page-root">Machine Unit<a class="headerlink" href="#rst-computing-elements-basics-machine-unit--page-root" title="Permalink to this heading">¶</a></h1>
 <p>The <strong>THAT</strong>, as most other electrical analog computers, can compute values in the range from -1 to +1. So every program needs to be checked if it exceeds +/-1 at any point. This check can also happen theoretically as well as experimentally. If a running programm exceeds +/-1, most analog computers will change into an overload state to protect the computing elemtents so no damage is to be expected. However the computing results are useless in case of overload.</p>
 <p>The THAT indicates overload state with a red LED light with <strong>OL</strong> marked.</p>
 <p>The <strong>machine unit</strong> is a technical variable and <strong>represents the maximum voltage</strong> which can be applied to the computing elements of an electrial analog computer.</p>
 <p>The machine unit is system specific, the <strong>THAT has a machine unit of +/- 10 volts.</strong></p>
 <p>The CHINCH-outputs (x, y , z, u) have a 10 to 1 voltage divider so the results given by those outputs can only give values between -1 and +1.</p>
-
+</section>
 
 
           </article>
@@ -448,7 +450,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
           
-            <a href="advanced_elements/noise_generators.html" title="3. Noise generators"
+            <a href="THAT_elements/passive_elements.html" title="9. Passive elements"
                class="md-flex md-footer-nav__link md-footer-nav__link--prev"
                rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
@@ -457,17 +459,17 @@
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span
-                      class="md-footer-nav__direction"> Previous </span> <span class="section-number">3. </span>Noise generators </span>
+                      class="md-footer-nav__direction"> Previous </span> <span class="section-number">9. </span>Passive elements </span>
               </div>
             </a>
           
           
-            <a href="../basics_operation_modes.html" title="Operation modes of analog computers"
+            <a href="advanced_elements.html" title="Advanced elements (not to be found on THATs)"
                class="md-flex md-footer-nav__link md-footer-nav__link--next"
                rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
                 class="md-flex__ellipsis"> <span
-                class="md-footer-nav__direction"> Next </span> Operation modes of analog computers </span>
+                class="md-footer-nav__direction"> Next </span> Advanced elements (not to be found on THATs) </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink"><i
                 class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
@@ -485,7 +487,7 @@
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>

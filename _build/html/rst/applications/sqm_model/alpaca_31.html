@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="lang:clipboard.copy" content="Copy to clipboard">
@@ -52,6 +53,7 @@
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -423,7 +425,7 @@
         <div class="md-content">
           <article class="md-content__inner md-typeset" role="main">
             
-  <div class="contents topic" id="contents">
+  <nav class="contents" id="contents" role="doc-toc">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#sprott-sqm-model" id="id3">Sprott SQM model</a></p>
@@ -432,9 +434,9 @@
 </ul>
 </li>
 </ul>
-</div>
-
-<h1 id="rst-applications-sqm-model-alpaca-31--page-root"><a class="toc-backref" href="#rst-applications-sqm-model-alpaca-31--page-root">Sprott SQM model</a><a class="headerlink" href="#rst-applications-sqm-model-alpaca-31--page-root" title="Permalink to this headline">¶</a></h1>
+</nav>
+<section id="sprott-sqm-model">
+<h1 id="rst-applications-sqm-model-alpaca-31--page-root"><a class="toc-backref" href="#rst-applications-sqm-model-alpaca-31--page-root" role="doc-backlink">Sprott SQM model</a><a class="headerlink" href="#rst-applications-sqm-model-alpaca-31--page-root" title="Permalink to this heading">¶</a></h1>
 <p>This application note implements the <span class="math notranslate nohighlight">\(SQ_M\)</span> model (cf.
 ), an example of a simple
 three-dimensional chaotic flow with a quadratic nonlinearity. The model
@@ -469,12 +471,12 @@ will enter its chaotic oscillation right away.</p>
 equations <strong>(1)</strong>, <strong>(2)</strong> and <strong>(3)</strong> as shown in figure 1.</p>
 <table>
 <colgroup>
-<col style="width: 100%"/>
+<col style="width: 100.0%"/>
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><div class="figure align-default">
+<tr class="row-odd"><td><figure class="align-default">
 <img alt="../../../_images/circuit015.png" src="../../../_images/circuit015.png"/>
-</div>
+</figure>
 </td>
 </tr>
 <tr class="row-even"><td><p>Figure 1: Analog computer setup for the SQM model</p></td>
@@ -484,21 +486,21 @@ equations <strong>(1)</strong>, <strong>(2)</strong> and <strong>(3)</strong> as
 <p>This little program is ideally suited for <em>THE ANALOG THING</em> as can be
 seen in figure 2. Figure 3 shows a typical phase space plot
 of <span class="math notranslate nohighlight">\(x\)</span> vs. <span class="math notranslate nohighlight">\(y\)</span> which was caputured using a USB-soundcard
-with stereo line in and the software <em>Oscilloppoi</em> <a class="footnote-reference brackets" href="#id2" id="id1">1</a> running on a
+with stereo line in and the software <em>Oscilloppoi</em> <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> running on a
 Mac.</p>
 <table>
 <colgroup>
-<col style="width: 50%"/>
-<col style="width: 50%"/>
+<col style="width: 50.0%"/>
+<col style="width: 50.0%"/>
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><div class="figure align-default">
+<tr class="row-odd"><td><figure class="align-default">
 <a class="reference internal image-reference" href="../../../_images/sqm_that.jpg"><img alt="../../../_images/sqm_that.jpg" src="../../../_images/sqm_that.jpg" style="width: 400px;"/></a>
-</div>
+</figure>
 </td>
-<td><div class="figure align-default">
+<td><figure class="align-default">
 <a class="reference internal image-reference" href="../../../_images/sqm_result.jpg"><img alt="../../../_images/sqm_result.jpg" src="../../../_images/sqm_result.jpg" style="width: 400px; height: 400px;"/></a>
-</div>
+</figure>
 </td>
 </tr>
 <tr class="row-even"><td><p>Figure 2: Implementation of the program shown in figure 1</p></td>
@@ -506,17 +508,18 @@ Mac.</p>
 </tr>
 </tbody>
 </table>
-
-<h2 id="references"><a class="toc-backref" href="#id4">References</a><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<section id="references">
+<h2 id="references"><a class="toc-backref" href="#id4" role="doc-backlink">References</a><a class="headerlink" href="#references" title="Permalink to this heading">¶</a></h2>
 <p>[Sprott(2016)] Julien Clinton Sprott, <em>Elegant Chaos – Algebraically Simple Chaotic
 Flows</em>, World Scientific, 2016</p>
-<dl class="footnote brackets">
-<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>See <a class="reference external" href="https://anikikobo.com/software/oscilloppoi/index_en.html">https://anikikobo.com/software/oscilloppoi/index_en.html</a>.</p>
-</dd>
-</dl>
-
-
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id2" role="note">
+<span class="label"><span class="fn-bracket">[</span><a href="#id1" role="doc-backlink">1</a><span class="fn-bracket">]</span></span>
+<p>See <a class="reference external" href="https://anikikobo.com/software/oscilloppoi/index_en.html">https://anikikobo.com/software/oscilloppoi/index_en.html</a>.</p>
+</aside>
+</aside>
+</section>
+</section>
 
 
           </article>
@@ -565,7 +568,7 @@ Flows</em>, World Scientific, 2016</p>
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>

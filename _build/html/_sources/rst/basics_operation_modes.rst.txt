@@ -15,12 +15,12 @@ THAT operation modes
 ====================
 
 OFF
-~~~
+---
 
 Turns off the computer, all elements are disconnected from the supply line.
 
-COEFF
-~~~~~
+Potentiometer setup (COEFF)
+---------------------------
 
 After the implementation of a program on an electrical analog computer, the coefficents are to be set up according to the calculation plan. The quality of a simulation is often dependent on very accurate potentiometer settings.
 
@@ -30,24 +30,22 @@ In this mode the potentiometers are supplied with a full machine unit on it's in
 
 **In order to display a certain coefficient, turn the coefficient switch to the desired potentiometer.**
 
-IC
-~~
-
-**IC** refers to **initial condition**.
+Initial condition (IC)
+----------------------
 
 Before an actual calculation can be performed, the intergators must be loaded to their initial state (--> initial condition), which can be understood as the integration constant occuring when solving integrals.
 
 The **IC** state is indicated with the yellow LED next to the display.
 
-OP
-~~
+Operation (OP)
+--------------
 
 In **operation mode** the actual calculation is performed, which is indicated with the green LED.
 
 In this mode the analog computer will not stop calculating until it is manually interrupted with the operation mode switch.
 
 HALT
-~~~~
+----
 
 The **HALT** mode is a mode made mainly for diagnostic purposes.
 
@@ -58,7 +56,7 @@ This is very useful to debug a program, e.g. in case of an overload a user can s
 **Note:** The HALT mode is not perfect. Due to small leak currents and other imperfections the results can drift over time. Therefore HALT should be used "as fast as possible".
 
 REP and REPF
-~~~~~~~~~~~~
+------------
 
 The **repetitive mode** is a very useful operation mode.
 
@@ -71,32 +69,29 @@ The LEDs will blink between **IC** and **OP**.
 The simulation of a (simple) damped oscillation is a good example for the usage of repetitive operation.
 
 MINION
-~~~~~~
+------
 
 The **MINION** mode was implement in order to connect and syncronize multiple THATs which each other on order to implement programs where their realizations exceed the number of available elements on one THAT.
 
-When a THAT is set to MINION mode, it is controlled by another THAT and will be set to the same operation mode as the **MASTER THAT** (except for COEFF mode, this still needs to be done manually for each THAT in the daisy chain).
+When a THAT is set to MINION mode, it is controlled by another THAT and will be set to the same operation mode as the **MASTER THAT**.
 
 The MASTER THAT is to be set into the desired operation mode by the user, which is likely OP or REP/REPF.
 
 
-Other operation modes
-=====================
+Other operation modes (not to be found on THATs)
+================================================
 
-ZERO
-~~~~
-
-Static test
-~~~~~~~~~~~
-
-Dynamic test
-~~~~~~~~~~~~
-
-Timescale test
-~~~~~~~~~~~~~~
 
 Operating with HALT
-~~~~~~~~~~~~~~~~~~~
+-------------------
+
+Comparable to repetitive mode, **operating with HALT** is used to stop a calculation, mostly after a given time. When the HALT condition is fulfilled, the computer will be switch to **HALT** mode and needs to be manually instructed to continue or repeat.
+Although this mode is not to be found on the mode switch of a THAT, it can be realized by using the hybrid port in combination with timed signals, for example witch a script running on an adruino.
 
 Iterative operation
-~~~~~~~~~~~~~~~~~~~
+-------------------
+
+**Iterative operation** is the most complex classic operation mode, because (groups of) integrators are not syncronized anymore but independent in their time cycles. This requires multiple timers and often also digital control logic.
+
+
+

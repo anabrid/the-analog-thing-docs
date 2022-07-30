@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="lang:clipboard.copy" content="Copy to clipboard">
@@ -52,6 +53,7 @@
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -431,7 +433,7 @@
         <div class="md-content">
           <article class="md-content__inner md-typeset" role="main">
             
-  <div class="contents topic" id="contents">
+  <nav class="contents" id="contents" role="doc-toc">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#mathieus-equation" id="id1">Mathieu’s equation</a></p>
@@ -442,11 +444,11 @@
 </ul>
 </li>
 </ul>
-</div>
-
-<h1 id="rst-applications-mathieu-alpaca-10--page-root"><a class="toc-backref" href="#rst-applications-mathieu-alpaca-10--page-root">Mathieu’s equation</a><a class="headerlink" href="#rst-applications-mathieu-alpaca-10--page-root" title="Permalink to this headline">¶</a></h1>
-
-<h2 id="introduction"><a class="toc-backref" href="#id2">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+</nav>
+<section id="mathieus-equation">
+<h1 id="rst-applications-mathieu-alpaca-10--page-root"><a class="toc-backref" href="#rst-applications-mathieu-alpaca-10--page-root" role="doc-backlink">Mathieu’s equation</a><a class="headerlink" href="#rst-applications-mathieu-alpaca-10--page-root" title="Permalink to this heading">¶</a></h1>
+<section id="introduction">
+<h2 id="introduction"><a class="toc-backref" href="#id2" role="doc-backlink">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
 <p>This application note deals with the well-known Mathieu equation, a
 linear homogenous second order differential equation with many
 applications (it can be used to described the vibrations in an elliptic
@@ -487,9 +489,9 @@ differential equation. If we differentiate (1) twice, we get <strong>(3)</strong
 <div class="math notranslate nohighlight">
 \[4\cos(2t)+4\left(1-\cos(2t)\right)=4\]</div>
 <p>with <strong>(3)</strong> and <strong>(4)</strong>.</p>
-
-
-<h2 id="scaling-and-programming"><a class="toc-backref" href="#id3">Scaling and programming</a><a class="headerlink" href="#scaling-and-programming" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="scaling-and-programming">
+<h2 id="scaling-and-programming"><a class="toc-backref" href="#id3" role="doc-backlink">Scaling and programming</a><a class="headerlink" href="#scaling-and-programming" title="Permalink to this heading">¶</a></h2>
 <p>In order to derive a computer setup for <strong>(2)</strong> we will first create a scaled
 computer program for <strong>(5)</strong> which can be written without any scaling like this,
 already closely resembling an analog computer program:</p>
@@ -535,9 +537,9 @@ difficult if <span class="math notranslate nohighlight">\(a\)</span> is allowed 
 interval. The setup shown in figure 2
 basically allows values <span class="math notranslate nohighlight">\(0\leq a\leq10\)</span> with the exception of the
 regions where the equation is unstable.</p>
-
-
-<h2 id="results"><a class="toc-backref" href="#id4">Results</a><a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="results">
+<h2 id="results"><a class="toc-backref" href="#id4" role="doc-backlink">Results</a><a class="headerlink" href="#results" title="Permalink to this heading">¶</a></h2>
 <p>Figures 3 and 4 show some typical solutions for Mathieu’s equation for different increasing values for
 <span class="math notranslate nohighlight">\(a\)</span>. These solutions were obtained with the integrator time
 constant set to <span class="math notranslate nohighlight">\(k_0=10^3\)</span> and the computer running in repetitive
@@ -545,8 +547,8 @@ operation. The oscilloscope is set to <span class="math notranslate nohighlight"
 horizontally and <span class="math notranslate nohighlight">\(2\)</span> V/div vertically.</p>
 <table>
 <colgroup>
-<col style="width: 50%"/>
-<col style="width: 50%"/>
+<col style="width: 50.0%"/>
+<col style="width: 50.0%"/>
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><a class="reference internal image-reference" href="../../../_images/m_1.jpg"><img alt="../../../_images/m_1.jpg" class="align-left" src="../../../_images/m_1.jpg" style="width: 400px;"/></a>
@@ -564,8 +566,8 @@ horizontally and <span class="math notranslate nohighlight">\(2\)</span> V/div 
 <p>Figure 3: Typical solutions of Mathieu’s equation for some values 0  a/10  1</p>
 <table>
 <colgroup>
-<col style="width: 50%"/>
-<col style="width: 50%"/>
+<col style="width: 50.0%"/>
+<col style="width: 50.0%"/>
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><a class="reference internal image-reference" href="../../../_images/m_5.jpg"><img alt="../../../_images/m_5.jpg" class="align-left" src="../../../_images/m_5.jpg" style="width: 400px;"/></a>
@@ -581,8 +583,8 @@ horizontally and <span class="math notranslate nohighlight">\(2\)</span> V/div 
 </tbody>
 </table>
 <p>Figure 4: Typical solutions of Mathieu’s equation for some values 0  a/10  1</p>
-
-
+</section>
+</section>
 
 
           </article>
@@ -631,7 +633,7 @@ horizontally and <span class="math notranslate nohighlight">\(2\)</span> V/div 
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>

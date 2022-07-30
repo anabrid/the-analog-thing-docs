@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="lang:clipboard.copy" content="Copy to clipboard">
@@ -52,6 +53,7 @@
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -436,7 +438,7 @@
           <article class="md-content__inner md-typeset" role="main">
             
   <p><strong>Warning: This simulation requires ten integrators, 15 summers, 16 multipliers, and 17 coefficient potentiometers (-&gt; eight THATs).*</strong></p>
-<div class="contents topic" id="contents">
+<nav class="contents" id="contents" role="doc-toc">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#simulating-a-double-pendulum" id="id3">Simulating a double pendulum</a></p>
@@ -448,17 +450,17 @@
 </ul>
 </li>
 </ul>
-</div>
-
-<h1 id="rst-applications-double-pendulum-alpaca-21--page-root"><a class="toc-backref" href="#rst-applications-double-pendulum-alpaca-21--page-root">Simulating a double pendulum</a><a class="headerlink" href="#rst-applications-double-pendulum-alpaca-21--page-root" title="Permalink to this headline">¶</a></h1>
+</nav>
+<section id="simulating-a-double-pendulum">
+<h1 id="rst-applications-double-pendulum-alpaca-21--page-root"><a class="toc-backref" href="#rst-applications-double-pendulum-alpaca-21--page-root" role="doc-backlink">Simulating a double pendulum</a><a class="headerlink" href="#rst-applications-double-pendulum-alpaca-21--page-root" title="Permalink to this heading">¶</a></h1>
 <table>
 <colgroup>
-<col style="width: 100%"/>
+<col style="width: 100.0%"/>
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><div class="figure align-default">
+<tr class="row-odd"><td><figure class="align-default">
 <a class="reference internal image-reference" href="../../../_images/double_pendulum.jpg"><img alt="../../../_images/double_pendulum.jpg" src="../../../_images/double_pendulum.jpg" style="width: 10cm;"/></a>
-</div>
+</figure>
 </td>
 </tr>
 <tr class="row-even"><td><p>Figure 1: Double pendulum</p></td>
@@ -466,9 +468,9 @@
 </tbody>
 </table>
 <p>This application note describes the simulation of a double pendulum as
-shown in figure 1 on an analog computer. <a class="footnote-reference brackets" href="#id2" id="id1">1</a></p>
-
-<h2 id="equations-of-motion"><a class="toc-backref" href="#id4">Equations of motion</a><a class="headerlink" href="#equations-of-motion" title="Permalink to this headline">¶</a></h2>
+shown in figure 1 on an analog computer. <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+<section id="equations-of-motion">
+<h2 id="equations-of-motion"><a class="toc-backref" href="#id4" role="doc-backlink">Equations of motion</a><a class="headerlink" href="#equations-of-motion" title="Permalink to this heading">¶</a></h2>
 <p>The equations of motion will be derived by determining the Lagrangian
 <span class="math notranslate nohighlight">\(L=T-V\)</span> with the two generalized coordinates <span class="math notranslate nohighlight">\(\varphi_1\)</span> and
 <span class="math notranslate nohighlight">\(\varphi_2\)</span> where <span class="math notranslate nohighlight">\(T\)</span> represents the total kinetic energy
@@ -579,9 +581,9 @@ in arbitrary units yielding the following two equations of motion of the double 
    \ddot{\varphi}_1&amp;=-\frac{1}{2}\left[\ddot{\varphi}_2\cos(\varphi_1-\varphi_2)+\dot{\varphi}_2^2\sin(\varphi_1-\varphi_2)+2g\sin(\varphi_1)\right]\label{equ_dp_motion_1_final}\\
    \ddot{\varphi}_2&amp;=-\left[\ddot{\varphi_1}\cos(\varphi_1-\varphi_2)-\dot{\varphi}_1^2\sin(\varphi_1-\varphi_2)+g\sin(\varphi_2)\right]\label{equ_dp_motion_2_final}
   \end{aligned}\end{split}\]</div>
-
-
-<h2 id="implementation"><a class="toc-backref" href="#id5">Implementation</a><a class="headerlink" href="#implementation" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="implementation">
+<h2 id="implementation"><a class="toc-backref" href="#id5" role="doc-backlink">Implementation</a><a class="headerlink" href="#implementation" title="Permalink to this heading">¶</a></h2>
 <p>The implementation of equations
 <strong>(10)</strong> and <strong>(11)</strong> is straightforward as shown in figures 2 and 3. Both circuits require
 the functions <span class="math notranslate nohighlight">\(\sin(\varphi_1-\varphi_2)\)</span>,
@@ -600,17 +602,17 @@ started, these potentiometers have to be set to
 <span class="math notranslate nohighlight">\(\cos(\varphi_2(0))\)</span>, <span class="math notranslate nohighlight">\(\sin(\varphi_2(0))\)</span>, respectively.</p>
 <table>
 <colgroup>
-<col style="width: 50%"/>
-<col style="width: 50%"/>
+<col style="width: 50.0%"/>
+<col style="width: 50.0%"/>
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><div class="figure align-left">
+<tr class="row-odd"><td><figure class="align-left">
 <a class="reference internal image-reference" href="../../../_images/circuit01.jpg"><img alt="../../../_images/circuit01.jpg" src="../../../_images/circuit01.jpg" style="width: 400px;"/></a>
-</div>
+</figure>
 </td>
-<td><div class="figure align-right">
+<td><figure class="align-right">
 <a class="reference internal image-reference" href="../../../_images/circuit02.jpg"><img alt="../../../_images/circuit02.jpg" src="../../../_images/circuit02.jpg" style="width: 400px;"/></a>
-</div>
+</figure>
 </td>
 </tr>
 <tr class="row-even"><td><p>Figure 2: Implementation of equation <strong>(10)</strong></p></td>
@@ -624,17 +626,17 @@ function generators can be directly fed with these values. The input for
 the third function generator is generated by a two-input summer as shown in figure 5.</p>
 <table>
 <colgroup>
-<col style="width: 50%"/>
-<col style="width: 50%"/>
+<col style="width: 50.0%"/>
+<col style="width: 50.0%"/>
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><div class="figure align-left">
+<tr class="row-odd"><td><figure class="align-left">
 <a class="reference internal image-reference" href="../../../_images/circuit03.jpg"><img alt="../../../_images/circuit03.jpg" src="../../../_images/circuit03.jpg" style="width: 400px;"/></a>
-</div>
+</figure>
 </td>
-<td><div class="figure align-left">
+<td><figure class="align-left">
 <a class="reference internal image-reference" href="../../../_images/circuit04.png"><img alt="../../../_images/circuit04.png" src="../../../_images/circuit04.png" style="width: 400px;"/></a>
-</div>
+</figure>
 </td>
 </tr>
 <tr class="row-even"><td><p>Figure 4: Generating sin(<span class="math notranslate nohighlight">\(\varphi\)</span>) and cos(<span class="math notranslate nohighlight">\(\varphi\)</span>)</p></td>
@@ -644,12 +646,12 @@ the third function generator is generated by a two-input summer as shown in figu
 </table>
 <table>
 <colgroup>
-<col style="width: 100%"/>
+<col style="width: 100.0%"/>
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><div class="figure align-left">
+<tr class="row-odd"><td><figure class="align-left">
 <a class="reference internal image-reference" href="../../../_images/circuit05.jpg"><img alt="../../../_images/circuit05.jpg" src="../../../_images/circuit05.jpg" style="width: 400px;"/></a>
-</div>
+</figure>
 </td>
 </tr>
 <tr class="row-even"><td><p>Figure 6: Display circuit for the double pendulum</p></td>
@@ -665,21 +667,21 @@ this circuit requires a high-frequency input <span class="math notranslate nohig
 which can be obtained by two integrators in series with a summer, the
 output of which is fed back into the first integrators. This circuit is
 not shown here but can be found in [<em>ULMANN</em> 2017, p.67].</p>
-
-
-<h2 id="results"><a class="toc-backref" href="#id6">Results</a><a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="results">
+<h2 id="results"><a class="toc-backref" href="#id6" role="doc-backlink">Results</a><a class="headerlink" href="#results" title="Permalink to this heading">¶</a></h2>
 <p>Figure 7 shows a long-term exposure
 of the movements of the double pendulum starting as an inverted pendulum
 with its first pendulum rod pointing upwards while the second one points
 downwards.</p>
 <table>
 <colgroup>
-<col style="width: 100%"/>
+<col style="width: 100.0%"/>
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><div class="figure align-left">
+<tr class="row-odd"><td><figure class="align-left">
 <a class="reference internal image-reference" href="../../../_images/double_pendulum_long_exposure.jpg"><img alt="../../../_images/double_pendulum_long_exposure.jpg" src="../../../_images/double_pendulum_long_exposure.jpg" style="width: 400px;"/></a>
-</div>
+</figure>
 </td>
 </tr>
 <tr class="row-even"><td><p>Figure 7: Long-term exposure of a double pendulum simulation run</p></td>
@@ -688,23 +690,24 @@ downwards.</p>
 </table>
 <p>This simulation requires ten integrators, 15 summers, 16 multipliers,
 and 17 coefficient potentiometers.</p>
-
-
-<h2 id="references"><a class="toc-backref" href="#id7">References</a><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="references">
+<h2 id="references"><a class="toc-backref" href="#id7" role="doc-backlink">References</a><a class="headerlink" href="#references" title="Permalink to this heading">¶</a></h2>
 <p>[MAHRENHOLTZ, 1968] Oskar Mahrenholtz, <em>Analogrechnen in Maschinenbau und Mechanik</em>, BI
 Hochschultaschenbücher, 1968</p>
 <p>[Ulmann 2017] Bernd Ulmann, <em>Analog Computer
 Programming</em>, Create Space, 2017</p>
-<dl class="footnote brackets">
-<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>This has also been done by
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id2" role="note">
+<span class="label"><span class="fn-bracket">[</span><a href="#id1" role="doc-backlink">1</a><span class="fn-bracket">]</span></span>
+<p>This has also been done by
 [MAHRENHOLTZ, 1968, pp. 159–165] which served as an
 inspiration for this application note, especially the display
 circuit.</p>
-</dd>
-</dl>
-
-
+</aside>
+</aside>
+</section>
+</section>
 
 
           </article>
@@ -753,7 +756,7 @@ circuit.</p>
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>

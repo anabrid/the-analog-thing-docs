@@ -12,6 +12,7 @@ Computing elements
    :titlesonly:
     
    computing_elements/THAT_elements
-   computing_elements/advanced_elements
    computing_elements/basics_machine_unit
+   computing_elements/advanced_elements
+
    

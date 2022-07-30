@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="lang:clipboard.copy" content="Copy to clipboard">
@@ -52,6 +53,7 @@
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -409,19 +411,19 @@
         <div class="md-content">
           <article class="md-content__inner md-typeset" role="main">
             
-  <div class="contents topic" id="contents">
+  <nav class="contents" id="contents" role="doc-toc">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#rossler-attractor-1" id="id9">Rössler-attractor </a></p></li>
 </ul>
-</div>
-
-<h1 id="rst-applications-roessler-attractor-aplaca-1--page-root"><a class="toc-backref" href="#rst-applications-roessler-attractor-aplaca-1--page-root">Rössler-attractor <a class="footnote-reference brackets" href="#rst-applications-roessler-attractor-aplaca-1--page-root" id="id1">1</a></a><a class="headerlink" href="#rst-applications-roessler-attractor-aplaca-1--page-root" title="Permalink to this headline">¶</a></h1>
+</nav>
+<section id="rossler-attractor-1">
+<h1 id="rst-applications-roessler-attractor-aplaca-1--page-root"><a class="toc-backref" href="#rst-applications-roessler-attractor-aplaca-1--page-root" role="doc-backlink">Rössler-attractor <a class="footnote-reference brackets" href="#rst-applications-roessler-attractor-aplaca-1--page-root" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></a><a class="headerlink" href="#rst-applications-roessler-attractor-aplaca-1--page-root" title="Permalink to this heading">¶</a></h1>
 <p>An electronic analog computer is ideally suited to study continuous-time
 dynamical systems of which those showing chaotic behavior are not only
 quite interesting but also yield aesthetically pleasing phase space
 plots. The particular system treated below was developed and studied in
-1976 by Otto Rössler. <a class="footnote-reference brackets" href="#id6" id="id2">2</a> This system is described by the following
+1976 by Otto Rössler. <a class="footnote-reference brackets" href="#id6" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> This system is described by the following
 three coupled differential equations (DEQ)</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
@@ -429,13 +431,13 @@ three coupled differential equations (DEQ)</p>
   \dot{y}&amp;=x+ay\\
   \dot{z}&amp;=b+z(x-c),
  \end{aligned}\end{split}\]</div>
-<p>where <span class="math notranslate nohighlight">\(a=1/5, b=1/5\)</span>, and <span class="math notranslate nohighlight">\(c=5.7\)</span>. <a class="footnote-reference brackets" href="#id7" id="id3">3</a> A remarkable
+<p>where <span class="math notranslate nohighlight">\(a=1/5, b=1/5\)</span>, and <span class="math notranslate nohighlight">\(c=5.7\)</span>. <a class="footnote-reference brackets" href="#id7" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a> A remarkable
 property of this particular system is that two of its three defining
 DEQs are linear.</p>
 <p>Since variables in an analog computer are limited to the co-domain
 <span class="math notranslate nohighlight">\([-1:+1]\)</span> with <span class="math notranslate nohighlight">\(-1\)</span> and <span class="math notranslate nohighlight">\(+1\)</span> denoting the so-called
 <em>machine units</em> which are most often represented by
-<span class="math notranslate nohighlight">\(\pm10\)</span> V, <a class="footnote-reference brackets" href="#id8" id="id4">4</a> these equations must be scaled before setting up
+<span class="math notranslate nohighlight">\(\pm10\)</span> V, <a class="footnote-reference brackets" href="#id8" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a> these equations must be scaled before setting up
 the computer. The main objective of scaling is to make sure that no
 variable exceeds <span class="math notranslate nohighlight">\([-1:+1]\)</span>. In addition to that it is desirable
 that each variable takes on values of an as large subinterval of
@@ -473,24 +475,28 @@ potentiometers:</p>
 adjustable at will – one particular setting resulted in the following
 picture:</p>
 <p><img alt="image3" src="../../../_images/attractor.jpg"/></p>
-<dl class="footnote brackets">
-<dt class="label" id="id5"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>I would like to thank professor Michael Brisk for spotting and
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id5" role="note">
+<span class="label"><span class="fn-bracket">[</span><a href="#id1" role="doc-backlink">1</a><span class="fn-bracket">]</span></span>
+<p>I would like to thank professor Michael Brisk for spotting and
 correcting some errors in this article.</p>
-</dd>
-<dt class="label" id="id6"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
-<dd><p>20th May 1940</p>
-</dd>
-<dt class="label" id="id7"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
-<dd><p><span class="math notranslate nohighlight">\(\dot{x}\)</span> denotes the first derivative of <span class="math notranslate nohighlight">\(x\)</span> with
+</aside>
+<aside class="footnote brackets" id="id6" role="note">
+<span class="label"><span class="fn-bracket">[</span><a href="#id2" role="doc-backlink">2</a><span class="fn-bracket">]</span></span>
+<p>20th May 1940</p>
+</aside>
+<aside class="footnote brackets" id="id7" role="note">
+<span class="label"><span class="fn-bracket">[</span><a href="#id3" role="doc-backlink">3</a><span class="fn-bracket">]</span></span>
+<p><span class="math notranslate nohighlight">\(\dot{x}\)</span> denotes the first derivative of <span class="math notranslate nohighlight">\(x\)</span> with
 respect to time: <span class="math notranslate nohighlight">\(\frac{\mathrm{d}x}{\mathrm{d}t}\)</span> etc.</p>
-</dd>
-<dt class="label" id="id8"><span class="brackets"><a class="fn-backref" href="#id4">4</a></span></dt>
-<dd><p>Vacuum tube based analog computers normally offered a voltage range
+</aside>
+<aside class="footnote brackets" id="id8" role="note">
+<span class="label"><span class="fn-bracket">[</span><a href="#id4" role="doc-backlink">4</a><span class="fn-bracket">]</span></span>
+<p>Vacuum tube based analog computers normally offered a voltage range
 of <span class="math notranslate nohighlight">\(\pm100\)</span> V.</p>
-</dd>
-</dl>
-
+</aside>
+</aside>
+</section>
 
 
           </article>
@@ -539,7 +545,7 @@ of <span class="math notranslate nohighlight">\(\pm100\)</span> V.</p>
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>

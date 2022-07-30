@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="lang:clipboard.copy" content="Copy to clipboard">
@@ -52,6 +53,7 @@
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -236,14 +238,14 @@
     <li class="md-nav__item">
     
     
-      <a href="../advanced_elements.html" class="md-nav__link">Advanced elements</a>
+      <a href="../basics_machine_unit.html" class="md-nav__link">Machine Unit</a>
       
     
     </li>
     <li class="md-nav__item">
     
     
-      <a href="../basics_machine_unit.html" class="md-nav__link">Machine Unit</a>
+      <a href="../advanced_elements.html" class="md-nav__link">Advanced elements (not to be found on THATs)</a>
       
     
     </li></ul>
@@ -444,12 +446,12 @@
         <div class="md-content">
           <article class="md-content__inner md-typeset" role="main">
             
-  
-<h1 id="rst-computing-elements-that-elements-integrator--page-root"><a class="toc-backref" href="#rst-computing-elements-that-elements-integrator--page-root"><span class="section-number">4. </span>Integrator</a><a class="headerlink" href="#rst-computing-elements-that-elements-integrator--page-root" title="Permalink to this headline">¶</a></h1>
+  <section id="integrator">
+<h1 id="rst-computing-elements-that-elements-integrator--page-root"><a class="toc-backref" href="#rst-computing-elements-that-elements-integrator--page-root" role="doc-backlink"><span class="section-number">4. </span>Integrator</a><a class="headerlink" href="#rst-computing-elements-that-elements-integrator--page-root" title="Permalink to this heading">¶</a></h1>
 <table>
 <colgroup>
-<col style="width: 50%"/>
-<col style="width: 50%"/>
+<col style="width: 50.0%"/>
+<col style="width: 50.0%"/>
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><a class="reference internal image-reference" href="../../../_images/THAT_Integrator.png"><img alt="Alternative text" class="align-center" src="../../../_images/THAT_Integrator.png" style="width: 150px;"/></a>
@@ -462,7 +464,7 @@
 </tr>
 </tbody>
 </table>
-<div class="contents topic" id="contents">
+<nav class="contents" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#integrator" id="id1">Integrator</a></p>
@@ -484,9 +486,9 @@
 </ul>
 </li>
 </ul>
-</div>
-
-<h2 id="basics"><a class="toc-backref" href="#id2"><span class="section-number">4.1. </span>Basics</a><a class="headerlink" href="#basics" title="Permalink to this headline">¶</a></h2>
+</nav>
+<section id="basics">
+<h2 id="basics"><a class="toc-backref" href="#id2" role="doc-backlink"><span class="section-number">4.1. </span>Basics</a><a class="headerlink" href="#basics" title="Permalink to this heading">¶</a></h2>
 <p>Next to the summer, the <strong>integrator</strong> is the most important computing element, which is to be found on most if not all electrical analog computers.</p>
 <p>It fullfills the equation</p>
 <div class="math notranslate nohighlight">
@@ -502,14 +504,14 @@
   \ U(0)&amp;=\text{Integration constant / Starting value}\\
  \end{aligned}\end{split}\]</div>
 <p><strong>Note the sign change at the integrator output!</strong></p>
-
-
-<h2 id="electrical-circuits"><a class="toc-backref" href="#id3"><span class="section-number">4.2. </span>Electrical circuits</a><a class="headerlink" href="#electrical-circuits" title="Permalink to this headline">¶</a></h2>
-
-<h3 id="principle-electronic-circuit"><a class="toc-backref" href="#id4"><span class="section-number">4.2.1. </span>Principle electronic circuit</a><a class="headerlink" href="#principle-electronic-circuit" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="electrical-circuits">
+<h2 id="electrical-circuits"><a class="toc-backref" href="#id3" role="doc-backlink"><span class="section-number">4.2. </span>Electrical circuits</a><a class="headerlink" href="#electrical-circuits" title="Permalink to this heading">¶</a></h2>
+<section id="principle-electronic-circuit">
+<h3 id="principle-electronic-circuit"><a class="toc-backref" href="#id4" role="doc-backlink"><span class="section-number">4.2.1. </span>Principle electronic circuit</a><a class="headerlink" href="#principle-electronic-circuit" title="Permalink to this heading">¶</a></h3>
 <table>
 <colgroup>
-<col style="width: 100%"/>
+<col style="width: 100.0%"/>
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><a class="reference internal image-reference" href="../../../_images/integrator_principle_circuit.png"><img alt="Alternative text" class="align-center" src="../../../_images/integrator_principle_circuit.png" style="width: 350px;"/></a>
@@ -524,14 +526,14 @@
 <p>In opposition to the summer, the integrator circuit cannot really compensate the input current because the feedback capacitor blocks direct current. Instead it increases it’s output voltage as long as the sum of the input voltages is greater zero (and decreases the output for negative inputs).
 Therefore, this circuit <strong>performs a mathematical integration of given inputs over time.</strong></p>
 <p>The integrator is the only computing element which includes time as free variable in it’s computing result, which is why <strong>the integrator dictates the time course of any calculation performed on electrical analog computers.</strong></p>
-
-
-<h3 id="practial-electronic-circuit"><a class="toc-backref" href="#id5"><span class="section-number">4.2.2. </span>Practial electronic circuit</a><a class="headerlink" href="#practial-electronic-circuit" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="practial-electronic-circuit">
+<h3 id="practial-electronic-circuit"><a class="toc-backref" href="#id5" role="doc-backlink"><span class="section-number">4.2.2. </span>Practial electronic circuit</a><a class="headerlink" href="#practial-electronic-circuit" title="Permalink to this heading">¶</a></h3>
 <p>The principle integrator circuit is not very usefull because, once it is supplied with power, it will integrate till infinity.</p>
 <p>In the practical circuit shown below you find two relais switches <strong>r</strong> and <strong>h</strong>, which are used to control the operation mode of the integrator and thus to control the simulation.</p>
 <table>
 <colgroup>
-<col style="width: 100%"/>
+<col style="width: 100.0%"/>
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><a class="reference internal image-reference" href="../../../_images/integrator_practical_circuit.png"><img alt="Alternative text" class="align-center" src="../../../_images/integrator_practical_circuit.png" style="width: 350px;"/></a>
@@ -541,32 +543,32 @@ Therefore, this circuit <strong>performs a mathematical integration of given inp
 </tr>
 </tbody>
 </table>
-
-
-
-<h2 id="operation-modes"><a class="toc-backref" href="#id6"><span class="section-number">4.3. </span>Operation modes</a><a class="headerlink" href="#operation-modes" title="Permalink to this headline">¶</a></h2>
-
-<h3 id="initial-contition"><a class="toc-backref" href="#id7"><span class="section-number">4.3.1. </span>Initial contition</a><a class="headerlink" href="#initial-contition" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="operation-modes">
+<h2 id="operation-modes"><a class="toc-backref" href="#id6" role="doc-backlink"><span class="section-number">4.3. </span>Operation modes</a><a class="headerlink" href="#operation-modes" title="Permalink to this heading">¶</a></h2>
+<section id="initial-contition">
+<h3 id="initial-contition"><a class="toc-backref" href="#id7" role="doc-backlink"><span class="section-number">4.3.1. </span>Initial contition</a><a class="headerlink" href="#initial-contition" title="Permalink to this heading">¶</a></h3>
 <p>Before running the program/simulation, the condensator C needs to be charged to the starting value of the to be performed integration. This is acieved by setting both switches <strong>r</strong> and <strong>h</strong> to <strong>0</strong>.</p>
 <p>Every electrical analog computer needs to be in <strong>initial contidion mode</strong> before the program is started. (IC mode on THAT switch)</p>
-
-
-<h3 id="operation"><a class="toc-backref" href="#id8"><span class="section-number">4.3.2. </span>Operation</a><a class="headerlink" href="#operation" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="operation">
+<h3 id="operation"><a class="toc-backref" href="#id8" role="doc-backlink"><span class="section-number">4.3.2. </span>Operation</a><a class="headerlink" href="#operation" title="Permalink to this heading">¶</a></h3>
 <p>In <strong>operation mode</strong> (OP mode on THAT switch) both relais <strong>r</strong> and <strong>h</strong> are set to 1.</p>
 <p>By switching <strong>r</strong> to 1, the resistors Rf and R’f are pinned to ground so <strong>U(0)</strong> is no longer applied.</p>
 <p>By switching <strong>h</strong> to 1, the input resistors and therefore the input voltages are connected to the integrator.</p>
 <p>Overall, this configuration equals the principle integrator circuit.</p>
-
-
-<h3 id="halt"><a class="toc-backref" href="#id9"><span class="section-number">4.3.3. </span>HALT</a><a class="headerlink" href="#halt" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="halt">
+<h3 id="halt"><a class="toc-backref" href="#id9" role="doc-backlink"><span class="section-number">4.3.3. </span>HALT</a><a class="headerlink" href="#halt" title="Permalink to this heading">¶</a></h3>
 <p>The <strong>HALT mode</strong> allows a (short) interruption of the simulation at any point in time.
 Therefore <strong>r</strong> is set to 1 and <strong>h</strong> is set to 0.</p>
 <p>In this mode the inputs no longer effect the circuit, instead the last value just before switching <strong>h</strong> is hold at the inverter output.</p>
 <p>This is very usefull for diagnostic purposes.</p>
 <p><strong>Note: Due to leak currents and not ideal amplifiers the HALT mode cannot be held indefinetly. The value will (slowly) change over time.</strong></p>
-
-
-
+</section>
+</section>
+</section>
 
 
           </article>
@@ -615,7 +617,7 @@ Therefore <strong>r</strong> is set to 1 and <strong>h</strong> is set to 0.</p>
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>

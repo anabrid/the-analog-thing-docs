@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="lang:clipboard.copy" content="Copy to clipboard">
@@ -52,6 +53,7 @@
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -435,7 +437,7 @@
         <div class="md-content">
           <article class="md-content__inner md-typeset" role="main">
             
-  <div class="contents topic" id="contents">
+  <nav class="contents" id="contents" role="doc-toc">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#elegant-chaos" id="id2">Elegant Chaos</a></p>
@@ -447,18 +449,18 @@
 </ul>
 </li>
 </ul>
-</div>
-
-<h1 id="rst-applications-elegant-chaos-alpaca-15--page-root"><a class="toc-backref" href="#rst-applications-elegant-chaos-alpaca-15--page-root">Elegant Chaos</a><a class="headerlink" href="#rst-applications-elegant-chaos-alpaca-15--page-root" title="Permalink to this headline">¶</a></h1>
-
-<h2 id="introduction"><a class="toc-backref" href="#id3">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+</nav>
+<section id="elegant-chaos">
+<h1 id="rst-applications-elegant-chaos-alpaca-15--page-root"><a class="toc-backref" href="#rst-applications-elegant-chaos-alpaca-15--page-root" role="doc-backlink">Elegant Chaos</a><a class="headerlink" href="#rst-applications-elegant-chaos-alpaca-15--page-root" title="Permalink to this heading">¶</a></h1>
+<section id="introduction">
+<h2 id="introduction"><a class="toc-backref" href="#id3" role="doc-backlink">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
 <p>One of the most intriguing books on chaotic systems is
  which is a true treasure trove for everybody
 fascinated by these mathematical objects. In the following, we will
 implement two of these systems on an analog computer.</p>
-
-
-<h2 id="a-jerk-system"><a class="toc-backref" href="#id4">A jerk system</a><a class="headerlink" href="#a-jerk-system" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="a-jerk-system">
+<h2 id="a-jerk-system"><a class="toc-backref" href="#id4" role="doc-backlink">A jerk system</a><a class="headerlink" href="#a-jerk-system" title="Permalink to this heading">¶</a></h2>
 <p>So-called <em>jerk system</em>s are special cases of <em>autonomous dissipative
 systems</em>.The system under consideration in the following is described by
 the following differential equation:</p>
@@ -485,11 +487,6 @@ regions that exhibit chaotic behavior by some manual parameter
 variation.</p>
 <table id="id1">
 <caption><span class="caption-text">Table1: Potentiometer settings for the jerk system</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 33%"/>
-<col style="width: 25%"/>
-<col style="width: 43%"/>
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Potentiometer</p></th>
 <th class="head"><p>Calculated</p></th>
@@ -525,17 +522,17 @@ variation.</p>
 </table>
 <table>
 <colgroup>
-<col style="width: 50%"/>
-<col style="width: 50%"/>
+<col style="width: 50.0%"/>
+<col style="width: 50.0%"/>
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><div class="figure align-default">
+<tr class="row-odd"><td><figure class="align-default">
 <a class="reference internal image-reference" href="../../../_images/circuit01.png"><img alt="Setup for the jerk system" src="../../../_images/circuit01.png" style="width: 400px;"/></a>
-</div>
+</figure>
 </td>
-<td><div class="figure align-default">
+<td><figure class="align-default">
 <a class="reference internal image-reference" href="../../../_images/jerk_result.jpg"><img alt="Typical behavior of the jerk system" src="../../../_images/jerk_result.jpg" style="width: 400px;"/></a>
-</div>
+</figure>
 </td>
 </tr>
 <tr class="row-even"><td><p>Figure 1: Setup for the jerk system</p></td>
@@ -543,9 +540,9 @@ variation.</p>
 </tr>
 </tbody>
 </table>
-
-
-<h2 id="nose-hoover-oscillator"><a class="toc-backref" href="#id5">Nosé-Hoover Oscillator</a><a class="headerlink" href="#nose-hoover-oscillator" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="nose-hoover-oscillator">
+<h2 id="nose-hoover-oscillator"><a class="toc-backref" href="#id5" role="doc-backlink">Nosé-Hoover Oscillator</a><a class="headerlink" href="#nose-hoover-oscillator" title="Permalink to this heading">¶</a></h2>
 <p>Another beutiful chaotic system is the Nosé-Hoover oscillator, an
 example of an autonomous conservative system which is described by
 the following set of coupled differential equations:</p>
@@ -561,17 +558,17 @@ which are shown in the mesmerizing oscilloscope screen capture shown in
 figure 4.</p>
 <table>
 <colgroup>
-<col style="width: 50%"/>
-<col style="width: 50%"/>
+<col style="width: 50.0%"/>
+<col style="width: 50.0%"/>
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><div class="figure align-default">
+<tr class="row-odd"><td><figure class="align-default">
 <a class="reference internal image-reference" href="../../../_images/circuit02.png"><img alt="Setup for the Nosé-Hoover oscillator" src="../../../_images/circuit02.png" style="width: 400px;"/></a>
-</div>
+</figure>
 </td>
-<td><div class="figure align-default">
+<td><figure class="align-default">
 <a class="reference internal image-reference" href="../../../_images/nose_hoover_result.jpg"><img alt="Phase state plot of the Nosé-Hoover oscillator" src="../../../_images/nose_hoover_result.jpg" style="width: 400px;"/></a>
-</div>
+</figure>
 </td>
 </tr>
 <tr class="row-even"><td><p>Figure 3: Setup for the Nosé-Hoover oscillator</p></td>
@@ -579,13 +576,13 @@ figure 4.</p>
 </tr>
 </tbody>
 </table>
-
-
-<h2 id="references"><a class="toc-backref" href="#id6">References</a><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="references">
+<h2 id="references"><a class="toc-backref" href="#id6" role="doc-backlink">References</a><a class="headerlink" href="#references" title="Permalink to this heading">¶</a></h2>
 <p>[SPROTT 2011] Julien Clinton Sprott, <em>Elegant Chaos – Algebraically Simple Chaotic
 Flows</em>, World Scientific Publishing Co. Pte. Ltd, 2010</p>
-
-
+</section>
+</section>
 
 
           </article>
@@ -634,7 +631,7 @@ Flows</em>, World Scientific Publishing Co. Pte. Ltd, 2010</p>
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>

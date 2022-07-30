@@ -1,6 +1,6 @@
-=================
-Advanced elements
-=================
+============================================
+Advanced elements (not to be found on THATs)
+============================================
 
 .. toctree::
    :numbered:

@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="lang:clipboard.copy" content="Copy to clipboard">
@@ -52,6 +53,7 @@
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -409,14 +411,14 @@
         <div class="md-content">
           <article class="md-content__inner md-typeset" role="main">
             
-  <div class="contents topic" id="contents">
+  <nav class="contents" id="contents" role="doc-toc">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#the-hindmash-rose-model-of-neuronal-bursting" id="id5">The Hindmash-Rose-model of neuronal bursting</a></p></li>
 </ul>
-</div>
-
-<h1 id="rst-applications-hindmash-rose-neuron-spiking-neuron--page-root"><a class="toc-backref" href="#rst-applications-hindmash-rose-neuron-spiking-neuron--page-root">The Hindmash-Rose-model of neuronal bursting</a><a class="headerlink" href="#rst-applications-hindmash-rose-neuron-spiking-neuron--page-root" title="Permalink to this headline">¶</a></h1>
+</nav>
+<section id="the-hindmash-rose-model-of-neuronal-bursting">
+<h1 id="rst-applications-hindmash-rose-neuron-spiking-neuron--page-root"><a class="toc-backref" href="#rst-applications-hindmash-rose-neuron-spiking-neuron--page-root" role="doc-backlink">The Hindmash-Rose-model of neuronal bursting</a><a class="headerlink" href="#rst-applications-hindmash-rose-neuron-spiking-neuron--page-root" title="Permalink to this heading">¶</a></h1>
 <p>Beginning in the early 20th century, the behaviour of neurons has been
 described by increasingly realistic mathematical models. The very first
 of these models is called <em>integrate-and-fire</em> and is due to Lous
@@ -433,9 +435,9 @@ equivalent to the van der Pol equation</p>
 \[\ddot{y}+\mu\left(y^2-1\right)\dot{y}+y=0,\]</div>
 <p>which was devised by Balthasar van der Pol in 1920 as a result of his
 pioneering work on vacuum tubes and oscillator circuits. Accordingly,
-the FitzHugh-Nagumo model is basically a relaxation oscillator <a class="footnote-reference brackets" href="#id3" id="id1">1</a>
+the FitzHugh-Nagumo model is basically a relaxation oscillator <a class="footnote-reference brackets" href="#id3" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>
 controlled by an external stimulus <span class="math notranslate nohighlight">\(I_\text{ext}\)</span>.</p>
-<p>A much more interesting model is due to Hindmarsh and Rose <a class="footnote-reference brackets" href="#id4" id="id2">2</a> and
+<p>A much more interesting model is due to Hindmarsh and Rose <a class="footnote-reference brackets" href="#id4" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> and
 consists of three coupled differential equations</p>
 <div class="math notranslate nohighlight" id="equation-1">
 <span class="eqno">(1)<a class="headerlink" href="#equation-1" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{aligned}
@@ -466,12 +468,12 @@ additional potentiometers are required for a scaled analog computer
 program as compared with an unscaled program.</p>
 <table>
 <colgroup>
-<col style="width: 100%"/>
+<col style="width: 100.0%"/>
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><div class="figure align-default">
+<tr class="row-odd"><td><figure class="align-default">
 <img alt="../../../_images/numerical_simulation.jpg" src="../../../_images/numerical_simulation.jpg"/>
-</div>
+</figure>
 </td>
 </tr>
 <tr class="row-even"><td><p>Figure 1: Numerical simulation of the three coupled differential equations <strong>(1)</strong>, <strong>(2)</strong> and <strong>(3)</strong>.</p></td>
@@ -491,12 +493,12 @@ products <span class="math notranslate nohighlight">\(rs=0.004\)</span> and <spa
 additional potentiometers.</p>
 <table>
 <colgroup>
-<col style="width: 100%"/>
+<col style="width: 100.0%"/>
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><div class="figure align-default">
+<tr class="row-odd"><td><figure class="align-default">
 <img alt="../../../_images/circuit012.png" src="../../../_images/circuit012.png"/>
-</div>
+</figure>
 </td>
 </tr>
 <tr class="row-even"><td><p>Figure 2: Scaled analog computer setup for the Hindmarsh-Rose model</p></td>
@@ -510,12 +512,12 @@ the green trace corresponds to the amount of potassium channels
 (<span class="math notranslate nohighlight">\(y\)</span>), and the orange channel shows <span class="math notranslate nohighlight">\(z\)</span>.</p>
 <table>
 <colgroup>
-<col style="width: 100%"/>
+<col style="width: 100.0%"/>
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><div class="figure align-default">
+<tr class="row-odd"><td><figure class="align-default">
 <img alt="../../../_images/result_1.png" src="../../../_images/result_1.png"/>
-</div>
+</figure>
 </td>
 </tr>
 <tr class="row-even"><td><p>Figure 3: Typical result of spiking neuron simulation</p></td>
@@ -528,19 +530,21 @@ first-order differential eequations”, in <em>Nature</em>, Vol. 296, 11th March
 <p>[Hindmarsh et al. 1984] J. L. Hindmarsh, R. M. Rose, “A model of neuronal
 bursting using three coupled first order differential equations”, in
 <em>Prov. R. Soc. Lond.</em>, B 221, 87–102 (1984)</p>
-<dl class="footnote brackets">
-<dt class="label" id="id3"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>In contrast to a harmonic oscillator which is typically based on an
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id3" role="note">
+<span class="label"><span class="fn-bracket">[</span><a href="#id1" role="doc-backlink">1</a><span class="fn-bracket">]</span></span>
+<p>In contrast to a harmonic oscillator which is typically based on an
 amplifier with suitable feedback, running in resonance mode, a
 relaxation oscillator switches abruptly between charge and discharge
 mode and thus yields non-harmonic output signals.</p>
-</dd>
-<dt class="label" id="id4"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
-<dd><p>See  and
+</aside>
+<aside class="footnote brackets" id="id4" role="note">
+<span class="label"><span class="fn-bracket">[</span><a href="#id2" role="doc-backlink">2</a><span class="fn-bracket">]</span></span>
+<p>See  and
 .</p>
-</dd>
-</dl>
-
+</aside>
+</aside>
+</section>
 
 
           </article>
@@ -589,7 +593,7 @@ mode and thus yields non-harmonic output signals.</p>
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>

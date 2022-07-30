@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="lang:clipboard.copy" content="Copy to clipboard">
@@ -52,6 +53,7 @@
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -435,7 +437,7 @@
         <div class="md-content">
           <article class="md-content__inner md-typeset" role="main">
             
-  <div class="contents topic" id="contents">
+  <nav class="contents" id="contents" role="doc-toc">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#lorenz-attractor-1" id="id7">Lorenz-attractor </a></p>
@@ -447,24 +449,24 @@
 </ul>
 </li>
 </ul>
-</div>
-
-<h1 id="rst-applications-lorenz-alpaca-2--page-root"><a class="toc-backref" href="#rst-applications-lorenz-alpaca-2--page-root">Lorenz-attractor <a class="footnote-reference brackets" href="#rst-applications-lorenz-alpaca-2--page-root" id="id1">1</a></a><a class="headerlink" href="#rst-applications-lorenz-alpaca-2--page-root" title="Permalink to this headline">¶</a></h1>
-
-<h2 id="introduction"><a class="toc-backref" href="#id8">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+</nav>
+<section id="lorenz-attractor-1">
+<h1 id="rst-applications-lorenz-alpaca-2--page-root"><a class="toc-backref" href="#rst-applications-lorenz-alpaca-2--page-root" role="doc-backlink">Lorenz-attractor <a class="footnote-reference brackets" href="#rst-applications-lorenz-alpaca-2--page-root" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></a><a class="headerlink" href="#rst-applications-lorenz-alpaca-2--page-root" title="Permalink to this heading">¶</a></h1>
+<section id="introduction">
+<h2 id="introduction"><a class="toc-backref" href="#id8" role="doc-backlink">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
 <p>This issue 2 of “Analog Computer Applications” deals with one of the
 most intriguing and well known chaotic attractors, the so-called
 Lorenz-attractor or -system. It was developed in 1963 by Edward Norton
-Lorenz <a class="footnote-reference brackets" href="#id5" id="id2">2</a> as a simplified model for atmospheric convection and first
+Lorenz <a class="footnote-reference brackets" href="#id5" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> as a simplified model for atmospheric convection and first
 described in . Although this seminal work
 was performed on a digital computer, a Royal McBee LGP-30, the
 Lorenz-attractor is ideally suited to be implemented on an analog
 computer.</p>
-
-
-<h2 id="scaling"><a class="toc-backref" href="#id9">Scaling</a><a class="headerlink" href="#scaling" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="scaling">
+<h2 id="scaling"><a class="toc-backref" href="#id9" role="doc-backlink">Scaling</a><a class="headerlink" href="#scaling" title="Permalink to this heading">¶</a></h2>
 <p>This dynamic chaotic attractor is described by three coupled
-differential equations of the form <a class="footnote-reference brackets" href="#id6" id="id3">3</a></p>
+differential equations of the form <a class="footnote-reference brackets" href="#id6" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
    \dot{x}&amp;=\sigma(y-x)\\
@@ -507,17 +509,17 @@ setup:</p>
     r&amp;=-xs\\
     -y&amp;=-\int1.536r-0.1y\ \mathrm{d}t.
    \end{aligned}\end{split}\]</div>
-
-
-<h2 id="setup"><a class="toc-backref" href="#id10">Setup</a><a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="setup">
+<h2 id="setup"><a class="toc-backref" href="#id10" role="doc-backlink">Setup</a><a class="headerlink" href="#setup" title="Permalink to this heading">¶</a></h2>
 <p>These equations can now readily implemented on a decent analog computer
 like the minimal Analog Paradigm Model-1 shown below:</p>
 <p><img alt="image1" src="../../../_images/setup1.jpg"/></p>
 <p>The corresponding schematic looks like this:</p>
 <p><a class="reference internal" href="../../../_images/circuit013.png"><img alt="image4" src="../../../_images/circuit013.png" style="width: 15cm;"/></a></p>
-
-
-<h2 id="results"><a class="toc-backref" href="#id11">Results</a><a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="results">
+<h2 id="results"><a class="toc-backref" href="#id11" role="doc-backlink">Results</a><a class="headerlink" href="#results" title="Permalink to this heading">¶</a></h2>
 <p>Depending on the time constant <span class="math notranslate nohighlight">\(k_0\)</span> set for the integrators,
 either a mechanical <span class="math notranslate nohighlight">\(x/y\)</span>-plotter or an oscilloscope may be used
 to get a graphical representation of this chaotic attractor. The
@@ -529,21 +531,24 @@ attractor using the following circuit with appropriate values set for
 <p>9 Christian Kuehn, <em>Multiple Time Scale Dynamics</em>, Springer, 2015 Edward
 Norton Lorenz, “Deterministic Nonperiodic Flow”, in <em>Journal of the
 Atmospheric Sciences</em>, Volume 20, pp. 130–141, March 1963</p>
-<dl class="footnote brackets">
-<dt class="label" id="id4"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>The author would like to thank Mr. David Broadbent for his valuable
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id4" role="note">
+<span class="label"><span class="fn-bracket">[</span><a href="#id1" role="doc-backlink">1</a><span class="fn-bracket">]</span></span>
+<p>The author would like to thank Mr. David Broadbent for his valuable
 suggestions and improvements.</p>
-</dd>
-<dt class="label" id="id5"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
-<dd><p>May 23, 1917, April 16, 2008</p>
-</dd>
-<dt class="label" id="id6"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
-<dd><p>As always, a dot over a variable denotes the time-derivative, i. e.
+</aside>
+<aside class="footnote brackets" id="id5" role="note">
+<span class="label"><span class="fn-bracket">[</span><a href="#id2" role="doc-backlink">2</a><span class="fn-bracket">]</span></span>
+<p>May 23, 1917, April 16, 2008</p>
+</aside>
+<aside class="footnote brackets" id="id6" role="note">
+<span class="label"><span class="fn-bracket">[</span><a href="#id3" role="doc-backlink">3</a><span class="fn-bracket">]</span></span>
+<p>As always, a dot over a variable denotes the time-derivative, i. e.
 <span class="math notranslate nohighlight">\(\dot{x}=\frac{\mathrm{d}x}{\mathrm{d}t}\)</span>.</p>
-</dd>
-</dl>
-
-
+</aside>
+</aside>
+</section>
+</section>
 
 
           </article>
@@ -592,7 +597,7 @@ suggestions and improvements.</p>
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>

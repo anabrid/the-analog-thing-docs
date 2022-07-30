@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="lang:clipboard.copy" content="Copy to clipboard">
@@ -52,11 +53,12 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Programming analog computers" href="basics_programming.html" />
-    <link rel="prev" title="Machine Unit" href="computing_elements/basics_machine_unit.html" />
+    <link rel="prev" title="3. Noise generators" href="computing_elements/advanced_elements/noise_generators.html" />
   
    
 
@@ -243,11 +245,11 @@
               <ul class="md-nav__list">
         <li class="md-nav__item"><a href="#off" class="md-nav__link">OFF</a>
         </li>
-        <li class="md-nav__item"><a href="#coeff" class="md-nav__link">COEFF</a>
+        <li class="md-nav__item"><a href="#potentiometer-setup-coeff" class="md-nav__link">Potentiometer setup (COEFF)</a>
         </li>
-        <li class="md-nav__item"><a href="#ic" class="md-nav__link">IC</a>
+        <li class="md-nav__item"><a href="#initial-condition-ic" class="md-nav__link">Initial condition (IC)</a>
         </li>
-        <li class="md-nav__item"><a href="#op" class="md-nav__link">OP</a>
+        <li class="md-nav__item"><a href="#operation-op" class="md-nav__link">Operation (OP)</a>
         </li>
         <li class="md-nav__item"><a href="#halt" class="md-nav__link">HALT</a>
         </li>
@@ -257,16 +259,8 @@
         </li></ul>
             </nav>
         </li>
-        <li class="md-nav__item"><a href="#other-operation-modes" class="md-nav__link">Other operation modes</a><nav class="md-nav">
+        <li class="md-nav__item"><a href="#other-operation-modes-not-to-be-found-on-thats" class="md-nav__link">Other operation modes (not to be found on THATs)</a><nav class="md-nav">
               <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#zero" class="md-nav__link">ZERO</a>
-        </li>
-        <li class="md-nav__item"><a href="#static-test" class="md-nav__link">Static test</a>
-        </li>
-        <li class="md-nav__item"><a href="#dynamic-test" class="md-nav__link">Dynamic test</a>
-        </li>
-        <li class="md-nav__item"><a href="#timescale-test" class="md-nav__link">Timescale test</a>
-        </li>
         <li class="md-nav__item"><a href="#operating-with-halt" class="md-nav__link">Operating with HALT</a>
         </li>
         <li class="md-nav__item"><a href="#iterative-operation" class="md-nav__link">Iterative operation</a>
@@ -439,11 +433,11 @@
               <ul class="md-nav__list">
         <li class="md-nav__item"><a href="#off" class="md-nav__link">OFF</a>
         </li>
-        <li class="md-nav__item"><a href="#coeff" class="md-nav__link">COEFF</a>
+        <li class="md-nav__item"><a href="#potentiometer-setup-coeff" class="md-nav__link">Potentiometer setup (COEFF)</a>
         </li>
-        <li class="md-nav__item"><a href="#ic" class="md-nav__link">IC</a>
+        <li class="md-nav__item"><a href="#initial-condition-ic" class="md-nav__link">Initial condition (IC)</a>
         </li>
-        <li class="md-nav__item"><a href="#op" class="md-nav__link">OP</a>
+        <li class="md-nav__item"><a href="#operation-op" class="md-nav__link">Operation (OP)</a>
         </li>
         <li class="md-nav__item"><a href="#halt" class="md-nav__link">HALT</a>
         </li>
@@ -453,16 +447,8 @@
         </li></ul>
             </nav>
         </li>
-        <li class="md-nav__item"><a href="#other-operation-modes" class="md-nav__link">Other operation modes</a><nav class="md-nav">
+        <li class="md-nav__item"><a href="#other-operation-modes-not-to-be-found-on-thats" class="md-nav__link">Other operation modes (not to be found on THATs)</a><nav class="md-nav">
               <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#zero" class="md-nav__link">ZERO</a>
-        </li>
-        <li class="md-nav__item"><a href="#static-test" class="md-nav__link">Static test</a>
-        </li>
-        <li class="md-nav__item"><a href="#dynamic-test" class="md-nav__link">Dynamic test</a>
-        </li>
-        <li class="md-nav__item"><a href="#timescale-test" class="md-nav__link">Timescale test</a>
-        </li>
         <li class="md-nav__item"><a href="#operating-with-halt" class="md-nav__link">Operating with HALT</a>
         </li>
         <li class="md-nav__item"><a href="#iterative-operation" class="md-nav__link">Iterative operation</a>
@@ -485,12 +471,12 @@
         <div class="md-content">
           <article class="md-content__inner md-typeset" role="main">
             
-  
-<h1 id="rst-basics-operation-modes--page-root"><a class="toc-backref" href="#rst-basics-operation-modes--page-root">Operation modes of analog computers</a><a class="headerlink" href="#rst-basics-operation-modes--page-root" title="Permalink to this headline">¶</a></h1>
+  <section id="operation-modes-of-analog-computers">
+<h1 id="rst-basics-operation-modes--page-root"><a class="toc-backref" href="#rst-basics-operation-modes--page-root" role="doc-backlink">Operation modes of analog computers</a><a class="headerlink" href="#rst-basics-operation-modes--page-root" title="Permalink to this heading">¶</a></h1>
 <p>As mentioned in the integrator article, every electrical analog computer must have the ability to switch between different operation modes in order to control the simulation.</p>
 <p>The most basic operation modes derive from the practical integrator circuit: <em>Initial condition (short “IC”), Operation (or “OP”) and HALT.</em></p>
 <p>The following article shall give an overview of the <strong>operation modes</strong> of a THAT as well as an outlook on operation modes found on larger analog computers.</p>
-<div class="contents topic" id="contents">
+<nav class="contents" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#operation-modes-of-analog-computers" id="id1">Operation modes of analog computers</a></p>
@@ -498,96 +484,82 @@
 <li><p><a class="reference internal" href="#that-operation-modes" id="id2">THAT operation modes</a></p>
 <ul>
 <li><p><a class="reference internal" href="#off" id="id3">OFF</a></p></li>
-<li><p><a class="reference internal" href="#coeff" id="id4">COEFF</a></p></li>
-<li><p><a class="reference internal" href="#ic" id="id5">IC</a></p></li>
-<li><p><a class="reference internal" href="#op" id="id6">OP</a></p></li>
+<li><p><a class="reference internal" href="#potentiometer-setup-coeff" id="id4">Potentiometer setup (COEFF)</a></p></li>
+<li><p><a class="reference internal" href="#initial-condition-ic" id="id5">Initial condition (IC)</a></p></li>
+<li><p><a class="reference internal" href="#operation-op" id="id6">Operation (OP)</a></p></li>
 <li><p><a class="reference internal" href="#halt" id="id7">HALT</a></p></li>
 <li><p><a class="reference internal" href="#rep-and-repf" id="id8">REP and REPF</a></p></li>
 <li><p><a class="reference internal" href="#minion" id="id9">MINION</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#other-operation-modes" id="id10">Other operation modes</a></p>
+<li><p><a class="reference internal" href="#other-operation-modes-not-to-be-found-on-thats" id="id10">Other operation modes (not to be found on THATs)</a></p>
 <ul>
-<li><p><a class="reference internal" href="#zero" id="id11">ZERO</a></p></li>
-<li><p><a class="reference internal" href="#static-test" id="id12">Static test</a></p></li>
-<li><p><a class="reference internal" href="#dynamic-test" id="id13">Dynamic test</a></p></li>
-<li><p><a class="reference internal" href="#timescale-test" id="id14">Timescale test</a></p></li>
-<li><p><a class="reference internal" href="#operating-with-halt" id="id15">Operating with HALT</a></p></li>
-<li><p><a class="reference internal" href="#iterative-operation" id="id16">Iterative operation</a></p></li>
+<li><p><a class="reference internal" href="#operating-with-halt" id="id11">Operating with HALT</a></p></li>
+<li><p><a class="reference internal" href="#iterative-operation" id="id12">Iterative operation</a></p></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-</div>
-
-<h2 id="that-operation-modes"><a class="toc-backref" href="#id2">THAT operation modes</a><a class="headerlink" href="#that-operation-modes" title="Permalink to this headline">¶</a></h2>
-
-<h3 id="off"><a class="toc-backref" href="#id3">OFF</a><a class="headerlink" href="#off" title="Permalink to this headline">¶</a></h3>
+</nav>
+<section id="that-operation-modes">
+<h2 id="that-operation-modes"><a class="toc-backref" href="#id2" role="doc-backlink">THAT operation modes</a><a class="headerlink" href="#that-operation-modes" title="Permalink to this heading">¶</a></h2>
+<section id="off">
+<h3 id="off"><a class="toc-backref" href="#id3" role="doc-backlink">OFF</a><a class="headerlink" href="#off" title="Permalink to this heading">¶</a></h3>
 <p>Turns off the computer, all elements are disconnected from the supply line.</p>
-
-
-<h3 id="coeff"><a class="toc-backref" href="#id4">COEFF</a><a class="headerlink" href="#coeff" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="potentiometer-setup-coeff">
+<h3 id="potentiometer-setup-coeff"><a class="toc-backref" href="#id4" role="doc-backlink">Potentiometer setup (COEFF)</a><a class="headerlink" href="#potentiometer-setup-coeff" title="Permalink to this heading">¶</a></h3>
 <p>After the implementation of a program on an electrical analog computer, the coefficents are to be set up according to the calculation plan. The quality of a simulation is often dependent on very accurate potentiometer settings.</p>
 <p>Therefore the THAT as many other electrical analog computers comes with the <strong>COEFF</strong> mode.</p>
 <p>In this mode the potentiometers are supplied with a full machine unit on it’s input. The output of a coefficient is given to the display so it can be fine adjusted.</p>
 <p><strong>In order to display a certain coefficient, turn the coefficient switch to the desired potentiometer.</strong></p>
-
-
-<h3 id="ic"><a class="toc-backref" href="#id5">IC</a><a class="headerlink" href="#ic" title="Permalink to this headline">¶</a></h3>
-<p><strong>IC</strong> refers to <strong>initial condition</strong>.</p>
+</section>
+<section id="initial-condition-ic">
+<h3 id="initial-condition-ic"><a class="toc-backref" href="#id5" role="doc-backlink">Initial condition (IC)</a><a class="headerlink" href="#initial-condition-ic" title="Permalink to this heading">¶</a></h3>
 <p>Before an actual calculation can be performed, the intergators must be loaded to their initial state (–&gt; initial condition), which can be understood as the integration constant occuring when solving integrals.</p>
 <p>The <strong>IC</strong> state is indicated with the yellow LED next to the display.</p>
-
-
-<h3 id="op"><a class="toc-backref" href="#id6">OP</a><a class="headerlink" href="#op" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="operation-op">
+<h3 id="operation-op"><a class="toc-backref" href="#id6" role="doc-backlink">Operation (OP)</a><a class="headerlink" href="#operation-op" title="Permalink to this heading">¶</a></h3>
 <p>In <strong>operation mode</strong> the actual calculation is performed, which is indicated with the green LED.</p>
 <p>In this mode the analog computer will not stop calculating until it is manually interrupted with the operation mode switch.</p>
-
-
-<h3 id="halt"><a class="toc-backref" href="#id7">HALT</a><a class="headerlink" href="#halt" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="halt">
+<h3 id="halt"><a class="toc-backref" href="#id7" role="doc-backlink">HALT</a><a class="headerlink" href="#halt" title="Permalink to this heading">¶</a></h3>
 <p>The <strong>HALT</strong> mode is a mode made mainly for diagnostic purposes.</p>
 <p>When the operation mode switch is set to HALT, all integrators and therefore also all other computing elements will freeze in their current state, holding their current value.</p>
 <p>This is very useful to debug a program, e.g. in case of an overload a user can stop the machine and check at which computing element the overload occured.</p>
 <p><strong>Note:</strong> The HALT mode is not perfect. Due to small leak currents and other imperfections the results can drift over time. Therefore HALT should be used “as fast as possible”.</p>
-
-
-<h3 id="rep-and-repf"><a class="toc-backref" href="#id8">REP and REPF</a><a class="headerlink" href="#rep-and-repf" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="rep-and-repf">
+<h3 id="rep-and-repf"><a class="toc-backref" href="#id8" role="doc-backlink">REP and REPF</a><a class="headerlink" href="#rep-and-repf" title="Permalink to this heading">¶</a></h3>
 <p>The <strong>repetitive mode</strong> is a very useful operation mode.</p>
 <p>When set to <strong>REP</strong>, analog computers will continiously switch between <strong>IC</strong> and <strong>OP</strong>, so the calculation is repeated. The display shows the approximate operation time, where 1.000 equals 10 seconds operation time before reset.</p>
 <p>In <strong>REPF (–&gt; repetitive fast)</strong> the reset is performed 100 times faster, so 1.000 on the display equals 100 milliseconds operation time.</p>
 <p>The LEDs will blink between <strong>IC</strong> and <strong>OP</strong>.</p>
 <p>The simulation of a (simple) damped oscillation is a good example for the usage of repetitive operation.</p>
-
-
-<h3 id="minion"><a class="toc-backref" href="#id9">MINION</a><a class="headerlink" href="#minion" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="minion">
+<h3 id="minion"><a class="toc-backref" href="#id9" role="doc-backlink">MINION</a><a class="headerlink" href="#minion" title="Permalink to this heading">¶</a></h3>
 <p>The <strong>MINION</strong> mode was implement in order to connect and syncronize multiple THATs which each other on order to implement programs where their realizations exceed the number of available elements on one THAT.</p>
-<p>When a THAT is set to MINION mode, it is controlled by another THAT and will be set to the same operation mode as the <strong>MASTER THAT</strong> (except for COEFF mode, this still needs to be done manually for each THAT in the daisy chain).</p>
+<p>When a THAT is set to MINION mode, it is controlled by another THAT and will be set to the same operation mode as the <strong>MASTER THAT</strong>.</p>
 <p>The MASTER THAT is to be set into the desired operation mode by the user, which is likely OP or REP/REPF.</p>
-
-
-
-<h2 id="other-operation-modes"><a class="toc-backref" href="#id10">Other operation modes</a><a class="headerlink" href="#other-operation-modes" title="Permalink to this headline">¶</a></h2>
-
-<h3 id="zero"><a class="toc-backref" href="#id11">ZERO</a><a class="headerlink" href="#zero" title="Permalink to this headline">¶</a></h3>
-
-
-<h3 id="static-test"><a class="toc-backref" href="#id12">Static test</a><a class="headerlink" href="#static-test" title="Permalink to this headline">¶</a></h3>
-
-
-<h3 id="dynamic-test"><a class="toc-backref" href="#id13">Dynamic test</a><a class="headerlink" href="#dynamic-test" title="Permalink to this headline">¶</a></h3>
-
-
-<h3 id="timescale-test"><a class="toc-backref" href="#id14">Timescale test</a><a class="headerlink" href="#timescale-test" title="Permalink to this headline">¶</a></h3>
-
-
-<h3 id="operating-with-halt"><a class="toc-backref" href="#id15">Operating with HALT</a><a class="headerlink" href="#operating-with-halt" title="Permalink to this headline">¶</a></h3>
-
-
-<h3 id="iterative-operation"><a class="toc-backref" href="#id16">Iterative operation</a><a class="headerlink" href="#iterative-operation" title="Permalink to this headline">¶</a></h3>
-
-
-
+</section>
+</section>
+<section id="other-operation-modes-not-to-be-found-on-thats">
+<h2 id="other-operation-modes-not-to-be-found-on-thats"><a class="toc-backref" href="#id10" role="doc-backlink">Other operation modes (not to be found on THATs)</a><a class="headerlink" href="#other-operation-modes-not-to-be-found-on-thats" title="Permalink to this heading">¶</a></h2>
+<section id="operating-with-halt">
+<h3 id="operating-with-halt"><a class="toc-backref" href="#id11" role="doc-backlink">Operating with HALT</a><a class="headerlink" href="#operating-with-halt" title="Permalink to this heading">¶</a></h3>
+<p>Comparable to repetitive mode, <strong>operating with HALT</strong> is used to stop a calculation, mostly after a given time. When the HALT condition is fulfilled, the computer will be switch to <strong>HALT</strong> mode and needs to be manually instructed to continue or repeat.
+Although this mode is not to be found on the mode switch of a THAT, it can be realized by using the hybrid port in combination with timed signals, for example witch a script running on an adruino.</p>
+</section>
+<section id="iterative-operation">
+<h3 id="iterative-operation"><a class="toc-backref" href="#id12" role="doc-backlink">Iterative operation</a><a class="headerlink" href="#iterative-operation" title="Permalink to this heading">¶</a></h3>
+<p><strong>Iterative operation</strong> is the most complex classic operation mode, because (groups of) integrators are not syncronized anymore but independent in their time cycles. This requires multiple timers and often also digital control logic.</p>
+</section>
+</section>
+</section>
 
 
           </article>
@@ -599,7 +571,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
           
-            <a href="computing_elements/basics_machine_unit.html" title="Machine Unit"
+            <a href="computing_elements/advanced_elements/noise_generators.html" title="3. Noise generators"
                class="md-flex md-footer-nav__link md-footer-nav__link--prev"
                rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
@@ -608,7 +580,7 @@
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span
-                      class="md-footer-nav__direction"> Previous </span> Machine Unit </span>
+                      class="md-footer-nav__direction"> Previous </span> <span class="section-number">3. </span>Noise generators </span>
               </div>
             </a>
           
@@ -636,7 +608,7 @@
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>

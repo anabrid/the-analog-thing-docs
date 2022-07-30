@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="lang:clipboard.copy" content="Copy to clipboard">
@@ -52,6 +53,7 @@
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -431,7 +433,7 @@
         <div class="md-content">
           <article class="md-content__inner md-typeset" role="main">
             
-  <div class="contents topic" id="contents">
+  <nav class="contents" id="contents" role="doc-toc">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#zombie-apocalypse-now" id="id2">Zombie Apocalypse Now</a></p>
@@ -442,11 +444,11 @@
 </ul>
 </li>
 </ul>
-</div>
-
-<h1 id="rst-applications-zombies-alpaca-6--page-root"><a class="toc-backref" href="#rst-applications-zombies-alpaca-6--page-root">Zombie Apocalypse Now</a><a class="headerlink" href="#rst-applications-zombies-alpaca-6--page-root" title="Permalink to this headline">¶</a></h1>
-
-<h2 id="introduction"><a class="toc-backref" href="#id3">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+</nav>
+<section id="zombie-apocalypse-now">
+<h1 id="rst-applications-zombies-alpaca-6--page-root"><a class="toc-backref" href="#rst-applications-zombies-alpaca-6--page-root" role="doc-backlink">Zombie Apocalypse Now</a><a class="headerlink" href="#rst-applications-zombies-alpaca-6--page-root" title="Permalink to this heading">¶</a></h1>
+<section id="introduction">
+<h2 id="introduction"><a class="toc-backref" href="#id3" role="doc-backlink">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
 <p>How could one not like zombie movies? It was about time that someone,
 Robert Smith? and his collaborators, shed some light on zombie attacks
 from a mathematical point of view (see ). Phil
@@ -459,9 +461,9 @@ to model a world infested by zombies. Whenever there is a problem which
 is readily described by (coupled) differential equations, an analog
 computer is the ideal tool to tackle them as we will do in the
 following.</p>
-
-
-<h2 id="programming"><a class="toc-backref" href="#id4">Programming</a><a class="headerlink" href="#programming" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="programming">
+<h2 id="programming"><a class="toc-backref" href="#id4" role="doc-backlink">Programming</a><a class="headerlink" href="#programming" title="Permalink to this heading">¶</a></h2>
 <p>The mathematicsl model itself is quite straightforward and consists of
 the following two coupled differential equations:</p>
 <div class="math notranslate nohighlight">
@@ -479,16 +481,18 @@ The remaining parameters are</p>
 <p><span class="math notranslate nohighlight">\(\zeta\)</span>: Normal “death” rate of the zombie population.</p>
 <p>Figure 1 shows the resulting program for the two equations  while figure 2 shows the program as
 implemented on an Analog Paradigm Model-1 analog computer.</p>
-<div class="figure align-default">
+<figure class="align-default">
 <a class="reference internal image-reference" href="../../../_images/circuit016.png"><img alt="Circuit of zombie simulation" src="../../../_images/circuit016.png" style="width: 12cm;"/></a>
-</div>
-<div class="figure align-default" id="id1">
+</figure>
+<figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../../../_images/zombie_program.jpg"><img alt="Zombie simulation on an Analog Paradigm Model-1 analog computer" src="../../../_images/zombie_program.jpg" style="width: 12cm;"/></a>
-<p class="caption"><span class="caption-text">Zombie simulation on an Analog Paradigm Model-1 analog computer</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
-
-
-<h2 id="results"><a class="toc-backref" href="#id5">Results</a><a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h2>
+<figcaption>
+<p><span class="caption-text">Zombie simulation on an Analog Paradigm Model-1 analog computer</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="results">
+<h2 id="results"><a class="toc-backref" href="#id5" role="doc-backlink">Results</a><a class="headerlink" href="#results" title="Permalink to this heading">¶</a></h2>
 <p>Figure 3 shows a typical result obtained with the setup described above. The computer was run in
 repetitive mode with the time-constants of the integrators set to
 <span class="math notranslate nohighlight">\(k_0=10^3\)</span>. Additionally, only integrator inputs with a weight of
@@ -496,17 +500,17 @@ repetitive mode with the time-constants of the integrators set to
 factor of <span class="math notranslate nohighlight">\(10\)</span>. The IC-time was set to short, and the OP-time to
 <span class="math notranslate nohighlight">\(60\)</span> ms. The oscilloscope was explicitly triggered with one of the
 TRIG-outputs of the CU to obtain a stable, flicker-free display.</p>
-<div class="figure align-default">
+<figure class="align-default">
 <a class="reference internal image-reference" href="../../../_images/zombie_results.jpg"><img alt="Results of a typical zombie simulation" src="../../../_images/zombie_results.jpg" style="width: 12cm;"/></a>
-</div>
+</figure>
 <p>Results of a typical zombie simulation.</p>
 <p>The parameters were derived experimentally by playing with the various
 coefficients until a stable behaviour was obtained. The output shown was
 generated with <span class="math notranslate nohighlight">\(h_0=z_0=0.6\)</span>, <span class="math notranslate nohighlight">\(\alpha=0.365\)</span>,
 <span class="math notranslate nohighlight">\(\beta=0.95\)</span>, <span class="math notranslate nohighlight">\(\delta=0.84\)</span> (very successful zombies,
 indeed), <span class="math notranslate nohighlight">\(\gamma=0.44\)</span>, and <span class="math notranslate nohighlight">\(\zeta=0.09\)</span>.</p>
-
-
+</section>
+</section>
 
 
           </article>
@@ -555,7 +559,7 @@ indeed), <span class="math notranslate nohighlight">\(\gamma=0.44\)</span>, and 
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>
