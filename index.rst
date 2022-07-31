@@ -50,13 +50,19 @@ You are invited to join the quest to bring analog computing back. THE ANALOG THI
 ==============================
 **The Analog Thing: Overview**
 ==============================
-   
+
+
+.. toctree::
+   :maxdepth: 1
+   :titlesonly:
+
+   rst/schematics
+
 
 .. toctree::
    :maxdepth: 1
    :caption: Electrical analog computer basics:
    :titlesonly:
-   
 
    rst/basics_computing_elements
    rst/basics_operation_modes
@@ -65,7 +71,6 @@ You are invited to join the quest to bring analog computing back. THE ANALOG THI
    rst/basics_differential_equations
    rst/basics_quickstart
    
-   
 
 .. toctree::
    :maxdepth: 2
@@ -73,7 +78,6 @@ You are invited to join the quest to bring analog computing back. THE ANALOG THI
    :titlesonly:
    
    rst/applications
-   
 
 
 .. toctree::

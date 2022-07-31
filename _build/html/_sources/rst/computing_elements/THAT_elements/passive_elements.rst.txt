@@ -41,5 +41,5 @@ Diodes
 ------
 
 There are six free diodes on each THat, four standard diodes and two Z-diodes.
-Diodes can for example be used to generate stabilzed sinus fuctions.
+Diodes can for example be used to generate stabilzed sinus functions.
 

@@ -3,7 +3,7 @@ Computing elements
 ==================
 
 .. image:: images/frontpage/THAT_021.jpg
-  :width: 800
+  :width: 600
   :alt: Alternative text
   :align: right
 
