@@ -294,7 +294,13 @@
         </li></ul>
             </nav>
         </li>
-        <li class="md-nav__item"><a href="#operation-and-visualization" class="md-nav__link">4. Operation and visualization</a>
+        <li class="md-nav__item"><a href="#operation-and-visualization" class="md-nav__link">4. Operation and visualization</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#output-device" class="md-nav__link">4.1 Output device</a>
+        </li>
+        <li class="md-nav__item"><a href="#choosing-a-viable-operation-mode" class="md-nav__link">4.2 Choosing a viable operation mode</a>
+        </li></ul>
+            </nav>
         </li></ul>
             </nav>
         </li>
@@ -448,7 +454,13 @@
         </li></ul>
             </nav>
         </li>
-        <li class="md-nav__item"><a href="#operation-and-visualization" class="md-nav__link">4. Operation and visualization</a>
+        <li class="md-nav__item"><a href="#operation-and-visualization" class="md-nav__link">4. Operation and visualization</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#output-device" class="md-nav__link">4.1 Output device</a>
+        </li>
+        <li class="md-nav__item"><a href="#choosing-a-viable-operation-mode" class="md-nav__link">4.2 Choosing a viable operation mode</a>
+        </li></ul>
+            </nav>
         </li></ul>
             </nav>
         </li>
@@ -759,10 +771,28 @@
 </tbody>
 </table>
 <p>Wiring complete.</p>
+<p>Now the potentiometers have to be set to their corresponding values. In this setup it is good to set every potenetiometer to 0.5 for the beginning.</p>
 </section>
 </section>
 <section id="operation-and-visualization">
 <h2 id="operation-and-visualization">4. Operation and visualization<a class="headerlink" href="#operation-and-visualization" title="Permalink to this heading">¶</a></h2>
+<section id="output-device">
+<h3 id="output-device">4.1 Output device<a class="headerlink" href="#output-device" title="Permalink to this heading">¶</a></h3>
+<p>In order to study the results of a given simulation an output device is necessary. For electrical analog computers oscilloscopes are the tool of choice. They provide a graphic visualization of changing voltages over time, which is exactly what electrical analog computers give.</p>
+<p>The THAT machine unit is 10 volts. The chinch outputs <strong>(x,y,z,u)</strong> are connected to a voltage devider with a factor of 1/10. So the maximum output is plus/minus 1 volt, which makes it compatible to standard mircophone inputs so it can be used with soundcard oscilloscopes.</p>
+<p>Note: Most oscilloscopes come with BNC-input sockets. Therefore a CHINCH to BNC adapter is needed in order to connect the chinch outputs properly. However, it is possible to connect oscilloscope probes directly with the patch cables.</p>
+<p>The trigger output can be very useful in case the oscilloscope has a free input left or even a seperate trigger input.</p>
+</section>
+<section id="choosing-a-viable-operation-mode">
+<h3 id="choosing-a-viable-operation-mode">4.2 Choosing a viable operation mode<a class="headerlink" href="#choosing-a-viable-operation-mode" title="Permalink to this heading">¶</a></h3>
+<p>After setting up the output device the operation mode is to be choosen.</p>
+<p>When setting the THAT to <strong>OP</strong>, the calculation will start and will continue until manually interrupted. This will lead to a valid result, but the result is only given one time. Once the damped oscillation is damped completely, the result will be zero (forever).</p>
+<p>The damped oscillation is a good example for using the <strong>fast repetitive mode (REPF)</strong> in order to study the behavior of the system with
+different potentiometer settings.</p>
+<p>In this mode the THAT switches between <strong>operation</strong> and <strong>initial condition</strong>, so both the green and yellow LED appear to shine simultaniously.</p>
+<p>For the repetitive mode the operation time needs to be taken into account. At the THAT it is controlled by the nob (OP-TIME) next to the operation mode switch.</p>
+<p>The operation time defines the time after which the simulation is repeated. After this time the THAT switches to IC mode for a fixed amount of time in order to prepare the next simulation run.</p>
+</section>
 </section>
 </section>
 

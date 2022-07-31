@@ -362,5 +362,37 @@ Colors from circuit scheme and actual images are matched to make them easier to 
   		
 Wiring complete.
 
+Now the potentiometers have to be set to their corresponding values. In this setup it is good to set every potenetiometer to 0.5 for the beginning.
+
 4. Operation and visualization
 ------------------------------
+
+4.1 Output device
+~~~~~~~~~~~~~~~~~
+
+In order to study the results of a given simulation an output device is necessary. For electrical analog computers oscilloscopes are the tool of choice. They provide a graphic visualization of changing voltages over time, which is exactly what electrical analog computers give.
+
+The THAT machine unit is 10 volts. The chinch outputs **(x,y,z,u)** are connected to a voltage devider with a factor of 1/10. So the maximum output is plus/minus 1 volt, which makes it compatible to standard mircophone inputs so it can be used with soundcard oscilloscopes.
+
+Note: Most oscilloscopes come with BNC-input sockets. Therefore a CHINCH to BNC adapter is needed in order to connect the chinch outputs properly. However, it is possible to connect oscilloscope probes directly with the patch cables.
+
+The trigger output can be very useful in case the oscilloscope has a free input left or even a seperate trigger input.
+
+
+4.2 Choosing a viable operation mode
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+After setting up the output device the operation mode is to be choosen.
+
+When setting the THAT to **OP**, the calculation will start and will continue until manually interrupted. This will lead to a valid result, but the result is only given one time. Once the damped oscillation is damped completely, the result will be zero (forever).
+
+The damped oscillation is a good example for using the **fast repetitive mode (REPF)** in order to study the behavior of the system with
+different potentiometer settings.
+
+In this mode the THAT switches between **operation** and **initial condition**, so both the green and yellow LED appear to shine simultaniously.
+
+For the repetitive mode the operation time needs to be taken into account. At the THAT it is controlled by the nob (OP-TIME) next to the operation mode switch.
+
+The operation time defines the time after which the simulation is repeated. After this time the THAT switches to IC mode for a fixed amount of time in order to prepare the next simulation run.
+
+
