@@ -362,7 +362,7 @@ Colors from circuit scheme and actual images are matched to make them easier to 
   		
 Wiring complete.
 
-Now the potentiometers have to be set to their corresponding values. In this setup it is good to set every potenetiometer to 0.5 for the beginning.
+Now the potentiometers have to be set to their corresponding values. In this setup it is good to **set every potenetiometer to 0.5** for the beginning.
 
 4. Operation and visualization
 ------------------------------

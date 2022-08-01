@@ -65,13 +65,13 @@ You are invited to join the quest to bring analog computing back. THE ANALOG THI
    :caption: Electrical analog computer basics:
    :titlesonly:
 
+   rst/basics_quickstart
    rst/basics_computing_elements
    rst/basics_operation_modes
    rst/basics_programming
    rst/basics_visualization
    rst/basics_differential_equations
-   rst/basics_quickstart
-   
+
 
 .. toctree::
    :maxdepth: 2
