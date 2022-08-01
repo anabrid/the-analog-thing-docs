@@ -57,6 +57,7 @@ You are invited to join the quest to bring analog computing back. THE ANALOG THI
    :titlesonly:
 
    rst/schematics
+   rst/faq
 
 
 .. toctree::
