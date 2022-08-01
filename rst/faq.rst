@@ -2,6 +2,8 @@
 Frequently asked questions (FAQ)
 ================================
 
+.. contents::
+   :depth: 2
 
 What is analog computing?
 -------------------------
