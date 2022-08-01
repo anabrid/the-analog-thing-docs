@@ -18,7 +18,7 @@ Coefficient potentiometer
      - Potentiometer circuit symbol
   	      
   	            	  	
-The simplest and only passive standard component ist the **coefficient petentiometer**.
+The simplest and only passive standard component ist the **coefficient potentiometer**.
 
 Commonly realized as precision potenetiometer connected as voltage divider, it is used to multiply a given input with a value between 0 and 1, so :math:`a*x` is generated.
 
