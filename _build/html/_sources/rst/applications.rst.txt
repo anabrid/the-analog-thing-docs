@@ -12,3 +12,4 @@
    applications/sqm_model/alpaca_31
    applications/euler_spiral/alpaca_33
    applications/double_pendulum/alpaca_21
+   applications/two_quantum_system/alpaca_36
